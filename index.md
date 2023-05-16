@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <style>
       body {
         padding: 150px;
