@@ -44,7 +44,7 @@
   <br>
   <br>
   <div class="nes-container with-title is-centered">
-  <p class="title">Container.is-centered</p>
+  <p class="title">boy friend</p>
     <section class="nes-container">
       <section class="message-list">
         <section class="message -left">
