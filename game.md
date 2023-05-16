@@ -2668,239 +2668,94 @@
             <td>불가능</td>            
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(251)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Shirt250.png" alt="잉어 셔츠"></button></td>
-            <td>잉어 셔츠</td>
-            <td>큰 잉어가 그려져있습니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/깜짝잉어" target="_blank">깜짝잉어</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(251)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Shirt250.png" alt="잉어 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(252)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f0/Shirt251.png" alt="붉은 플란넬 셔츠"></button></td>
-            <td>붉은 플란넬 셔츠</td>
-            <td>붉은색과 파란색 무늬가 있는 플란넬 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/해시브라운" target="_blank">해시브라운</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(252)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f0/Shirt251.png" alt="붉은 플란넬 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(253)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Shirt252.png" alt="또띠야 셔츠"></button></td>
-            <td>또띠야 셔츠</td>
-            <td>또띠야 무늬 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/또띠아" target="_blank">또띠아</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(253)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Shirt252.png" alt="또띠야 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(254)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/23/Shirt253.png" alt="따뜻한 플란넬 셔츠"></button></td>
-            <td>따뜻한 플란넬 셔츠</td>
-            <td>갈색과 장미색의 따뜻한 색이 조합된 플란넬 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/밀가루" target="_blank">밀가루</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(254)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/23/Shirt253.png" alt="따뜻한 플란넬 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(255)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/75/Shirt254.png" alt="설탕 셔츠"></button></td>
-            <td>설탕 셔츠</td>
-            <td>'달콤한 에너지'로 가득한 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/설탕" target="_blank">설탕</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(255)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/75/Shirt254.png" alt="설탕 셔츠"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(256)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d6/Shirt255.png" alt="녹색 플란넬 셔츠"></button></td>
-            <td>녹색 플란넬 셔츠</td>
-            <td>녹색과 갈색 무늬가 있는 플란넬 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/슈퍼 건강식" target="_blank">슈퍼 건강식</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(256)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d6/Shirt255.png" alt="녹색 플란넬 셔츠"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(257)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/21/Shirt256.png" alt="기름 얼룩 셔츠"></button></td>
-            <td>기름 얼룩 셔츠</td>
-            <td>기름이 많이 묻은 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/기름" target="_blank">기름</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(257)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/21/Shirt256.png" alt="기름 얼룩 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(258)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Shirt257.png" alt="	곰보 셔츠"></button></td>
-            <td>	곰보 셔츠</td>
-            <td>유명한 봄철 버섯이 그려진 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/곰보버섯" target="_blank">곰보버섯</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(258)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Shirt257.png" alt="	곰보 셔츠"></button></td>            
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(259)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Shirt258.png" alt="	봄 셔츠"></button></td>
-            <td>	봄 셔츠</td>
-            <td>가볍고 상쾌하고 봄의 색을 담은 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/파" target="_blank">파</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(259)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Shirt258.png" alt="	봄 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(260)"><img src="https://stardewvalleywiki.com/mediawiki/images/3/36/Shirt259a.png" alt="선원 셔츠"></button></td>
-            <td>선원 셔츠</td>
-            <td>넓은 바다가 생각납니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/날개다랑어" target="_blank">날개다랑어</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/멸치" target="_blank">멸치</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/장어" target="_blank">장어</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/넙치" target="_blank">넙치</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/청어" target="_blank">청어</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/복어" target="_blank">복어</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/숭어" target="_blank">숭어</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/붉은 퉁돔" target="_blank">붉은 퉁돔</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/정어리" target="_blank">정어리</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/오징어" target="_blank">오징어</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/틸라피아" target="_blank">틸라피아</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/참치" target="_blank">참치</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(260)"><img src="https://stardewvalleywiki.com/mediawiki/images/3/36/Shirt259a.png" alt="선원 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(261)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Shirt260.png" alt="우비"></button></td>
-            <td>우비</td>
-            <td>전형적인 노란색 우비.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/민물가재" target="_blank">민물가재</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/충알고둥" target="_blank">충알고둥</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/달팽이" target="_blank">달팽이</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(261)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Shirt260.png" alt="우비"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(262)"><img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Shirt261a.png" alt="선원 셔츠"></button></td>
-            <td>선원 셔츠</td>
-            <td>다른 선원 셔츠와는 달리, 흰색 깃이 있고 몸 부분은 염색할 수 있습니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/조개" target="_blank">조개</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/새조개" target="_blank">새조개</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/게" target="_blank">게</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/바닷가재" target="_blank">바닷가재</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/홍합" target="_blank">홍합</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/굴" target="_blank">굴</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/새우" target="_blank">새우</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(262)"><img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Shirt261a.png" alt="선원 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(263)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Shirt262a.png" alt="어두운 반다나 셔츠"></button></td>
-            <td>어두운 반다나 셔츠</td>
-            <td>다채로운 반다나가 있는 어두운 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/송로버섯" target="_blank">송로버섯</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/송로버섯 오일" target="_blank">송로버섯 오일</a> 조합</li>
-            <li><a href="https://ko.stardewvalleywiki.com/귀신들린 해골" target="_blank">이 드랍합니다.</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(263)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Shirt262a.png" alt="어두운 반다나 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(264)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Shirt263a.png" alt="어두운 하이라이트 셔츠"></button></td>
-            <td>어두운 하이라이트 셔츠</td>
-            <td>밝은 하이라이트가 있는 어두운 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/생명의 영약" target="_blank">생명의 영약</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/마늘즙" target="_blank">마늘즙</a> 조합</li>
-            <li><a href="https://ko.stardewvalleywiki.com/귀신들린 해골" target="_blank">이 드랍합니다.</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(264)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Shirt263a.png" alt="어두운 하이라이트 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(265)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Shirt264.png" alt="옴니 셔츠"></button></td>
-            <td>옴니 셔츠</td>
-            <td>무지개 반점들로 장식되어있습니다!</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/전 정동석" target="_blank">전 정동석</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(265)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Shirt264.png" alt="옴니 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(266)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5d/Shirt265.png" alt="신부 셔츠"></button></td>
-            <td>신부 셔츠</td>
-            <td>신부를 위한 아름다운 흰색 상의.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/화려한 부채" target="_blank">화려한 부채</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(266)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5d/Shirt265.png" alt="신부 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(267)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f0/Shirt266.png" alt="갈색 멜빵바지"></button></td>
-            <td>갈색 멜빵바지</td>
-            <td>흙먼지가 묻어도 잘 안 보입니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/헤이즐넛" target="_blank">헤이즐넛</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(267)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f0/Shirt266.png" alt="갈색 멜빵바지"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(268)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/79/Shirt267.png" alt="주황색 나비넥타이 셔츠"></button></td>
-            <td>주황색 나비넥타이 셔츠</td>
-            <td>큰 흰색 나비넥타이가 있는 주황색 줄무늬 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/겨울뿌리" target="_blank">겨울뿌리</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(268)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/79/Shirt267.png" alt="주황색 나비넥타이 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(269)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Shirt268.png" alt="흰색 멜빵바지"></button></td>
-            <td>흰색 멜빵바지</td>
-            <td>전형적인 농부의 복장의 깔끔한 변형.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/쌀" target="_blank">쌀</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(269)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Shirt268.png" alt="흰색 멜빵바지"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(270)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/42/Shirt269.png" alt="포어-오버 셔츠"></button></td>
-            <td>포어-오버 셔츠</td>
-            <td>익숙한 지그재그 무늬의 셔츠입니다. 아... 그 냄새.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/커피" target="_blank">커피</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/트리플 샷 에스프레소" target="_blank">트리플 샷 에스프레소</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(270)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/42/Shirt269.png" alt="포어-오버 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(271)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Shirt270.png" alt="녹색 재킷 셔츠"></button></td>
-            <td>녹색 재킷 셔츠</td>
-            <td>청둥오리의 무늬를 본뜬 옷. 염색할 수 있습니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/오리알" target="_blank">오리알</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(271)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Shirt270.png" alt="녹색 재킷 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(272)"><img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Shirt271a.png" alt="짧은 재킷"></button></td>
-            <td>짧은 재킷</td>
-            <td>염색 가능한 짧은 재킷.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/자두 푸딩" target="_blank">자두 푸딩</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(272)"><img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Shirt271a.png" alt="짧은 재킷"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(273)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Shirt272.png" alt="물방울무늬 셔츠"></button></td>
-            <td>물방울무늬 셔츠</td>
-            <td>염색 가능한 물방울무늬가 있는 어두운 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/어란" target="_blank">어란</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/공허 마요네즈" target="_blank">공허 마요네즈</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(273)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Shirt272.png" alt="물방울무늬 셔츠"></button></td>       
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(274)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a3/Shirt273.png" alt="흰 물방울무늬 셔츠"></button></td>
-            <td>흰 물방울무늬 셔츠</td>
-            <td>흰 물방울무늬가 있는 염색 가능한 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/양귀비씨 머핀" target="_blank">양귀비씨 머핀</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(274)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a3/Shirt273.png" alt="흰 물방울무늬 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(275)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e7/Shirt274.png" alt="위장색 셔츠"></button></td>
-            <td>위장색 셔츠</td>
-            <td>주변 환경과 비슷해 보이게 도와줍니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/야채 볶음" target="_blank">야채 볶음</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(275)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e7/Shirt274.png" alt="위장색 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(276)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e6/Shirt275.png" alt="	흙 셔츠"></button></td>
-            <td>	흙 셔츠</td>
-            <td>	농장과 어울립니다!</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/메이플 바" target="_blank">메이플 바</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(276)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e6/Shirt275.png" alt="	흙 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(277)"><img src="https://stardewvalleywiki.com/mediawiki/images/0/05/Shirt276.png" alt="게살 케이크 셔츠"></button></td>
-            <td>게살 케이크 셔츠</td>
-            <td>바로 즐길 수 있도록 아이올리 소스가 발라져있습니다. 즐거운 식사되세요!</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/게살 케이크" target="_blank">게살 케이크</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(277)"><img src="https://stardewvalleywiki.com/mediawiki/images/0/05/Shirt276.png" alt="게살 케이크 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(278)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/27/Shirt277a.png" alt="실크 셔츠"></button></td>
-            <td>실크 셔츠</td>
-            <td>비단 같은 재질로 만든 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/무 샐러드" target="_blank">무 샐러드</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(278)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/27/Shirt277a.png" alt="실크 셔츠"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(279)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/2d/Shirt278a.png" alt="파란 단추 조끼"></button></td>
-            <td>파란 단추 조끼</td>
-            <td>소매를 염색할 수 있는 파란색 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/문어" target="_blank">문어</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(279)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/2d/Shirt278a.png" alt="파란 단추 조끼"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(280)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Shirt279.png" alt="색 바랜 데님 셔츠"></button></td>
-            <td>색 바랜 데님 셔츠</td>
-            <td>칙칙하게 바랜 데님 셔츠입니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/연어" target="_blank">연어</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(280)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Shirt279.png" alt="색 바랜 데님 셔츠"></button></td>            
           </tr>
           <tr>
             <td><button onclick="shirtbtn(281)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Shirt280a.png" alt="붉은 단추 조끼"></button></td>         
