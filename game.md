@@ -91,6 +91,25 @@
           </div>
         </div>
       </div>
+     <div class="content-item" id="hat-content">
+        <table>
+          <tr>
+            <td><button onclick="hatbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Shirt000.png" alt="전형적인 멜빵바지"></button></td>
+          </tr>
+          <tr>
+            <td><button onclick="hatbtn(223)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Shirt222.png" alt="황금 테두리 셔츠"></button></td>          
+          </tr>
+          <tr>
+            <td><button onclick="hatbtn(224)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/46/Shirt223.png" alt="무지갯빛 셔츠"></button></td>        
+          </tr>
+          <tr>
+            <td><button onclick="hatbtn(225)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Shirt224.png" alt="펜던트 셔츠"></button></td>           
+          </tr>
+          <tr>
+            <td><button onclick="hatbtn(226)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Shirt225.png" alt="고온 셔츠"></button></td>        
+          </tr>
+        </table>
+      </div>
       <div class="content-item" id="shirt-content">
         <table>
           <tr>
@@ -335,98 +354,41 @@
       <div class="content-item" id="pants-content">
         <table>
           <tr>
-            <td><button onclick="pantsbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/78/Farmer_Pants.png" alt="	농부 바지"></button></td>           
+            <td><button onclick="pantsbtn(1)"><img src="images/bottoms/bottom1.png" alt="	농부 바지"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c5/Shorts.png" alt="반바지"></button></td>          
+            <td><button onclick="pantsbtn(2)"><img src="images/bottoms/bottom2.png" alt="반바지"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Long_Dress.png" alt="롱 드레스"></button></td>           
+            <td><button onclick="pantsbtn(3)"><img src="images/bottoms/bottom3.png" alt="롱 드레스"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fa/Skirt.png" alt="치마"></button></td>          
+            <td><button onclick="pantsbtn(4)"><img src="images/bottoms/bottom4.png" alt="치마"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/92/Pleated_Skirt.png" alt="주름치마"></button></td>          
+            <td><button onclick="pantsbtn(5)"><img src="images/bottoms/bottom5.png" alt="주름치마"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(6)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8d/Dinosaur_Pants.png" alt="공룡 바지"></button></td>         
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(7)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a4/Grass_Skirt.png" alt="잔디 치마"></button></td>          
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(8)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8a/Genie_Pants.png" alt="지니 바지"></button></td>          
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(9)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/26/Baggy_Pants.png" alt="헐렁한 바지"></button></td>           
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(10)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Simple_Dress.png" alt="	간단한 드레스"></button></td>           
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(11)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1e/Relaxed_Fit_Pants.png" alt="편안한 바지"></button></td>            
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(12)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4a/Relaxed_Fit_Shorts.png" alt="편안한 반바지"></button></td>            
+            <td><button onclick="pantsbtn(6)"><img src="images/bottoms/bottom6.png" alt="공룡 바지"></button></td>         
           </tr>
         </table>
       </div>
       <div class="content-item" id="shoes-content">
         <table>
           <tr>
-            <td><button onclick="shoesbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Sneakers.png" alt="운동화"></button></td>
+            <td><button onclick="shoesbtn(1)"><img src="images/shoes/shoe1.png" alt="운동화"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e8/Rubber_Boots.png" alt="고무 장화"></button></td>
+            <td><button onclick="shoesbtn(2)"><img src="images/shoes/shoe2.png" alt="고무 장화"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Leather_Boots.png" alt="가죽 장화"></button></td>
+            <td><button onclick="shoesbtn(3)"><img src="images/shoes/shoe3.png" alt="가죽 장화"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Work_Boots.png" alt="노동 장화"></button></td>
+            <td><button onclick="shoesbtn(4)"><img src="images/shoes/shoe4.png" alt="노동 장화"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Combat_Boots.png" alt="전투 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(6)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/93/Tundra_Boots.png" alt="툰트라 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(7)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e0/Leprechaun_Shoes.png" alt="레프러콘 신발"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(8)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4e/Thermal_Boots.png" alt="보온 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(9)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/15/Cowboy_Boots.png" alt="카우보이 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(10)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8d/Dark_Boots.png" alt="어둠의 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(11)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fa/Firewalker_Boots.png" alt="불길 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(12)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/98/Genie_Shoes.png" alt="지니 신발"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(13)"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6e/Space_Boots.png" alt="우주 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(14)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/ac/Emily%27s_Magic_Boots.png" alt="에밀리의 마법 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(15)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Cinderclown_Shoes.png" alt="잉걸불광대 신발"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(16)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/98/Mermaid_Boots.png" alt="인어 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(17)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fb/Dragonscale_Boots.png" alt="용비늘 장화"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="shoesbtn(18)"><img src="https://stardewvalleywiki.com/mediawiki/images/6/69/Crystal_Shoes.png" alt="수정 신발"></button></td>
+            <td><button onclick="shoesbtn(5)"><img src="images/shoes/shoe5.png" alt="전투 장화"></button></td>
           </tr>
         </table>
       </div>
