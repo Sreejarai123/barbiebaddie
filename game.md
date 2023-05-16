@@ -2903,145 +2903,64 @@
             <td>불가능</td>            
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(281)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Shirt280a.png" alt="붉은 단추 조끼"></button></td>
-            <td>붉은 단추 조끼</td>
-            <td>소매를 염색할 수 있는 붉은색 셔츠.</td>
-            <td>획득 불가.</td>
-            <td>(소매만) 가능</td>            
+            <td><button onclick="shirtbtn(281)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Shirt280a.png" alt="붉은 단추 조끼"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(282)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5a/Shirt281a.png" alt="초록 단추 조끼"></button></td>
-            <td>초록 단추 조끼</td>
-            <td>소매를 염색할 수 있는 초록색 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/대황" target="_blank">대황</a> 조합</li>
-            <li>옷감과 <a href="https://ko.stardewvalleywiki.com/백량금" target="_blank">백량금</a> 조합</li></ul></td>
-            <td>(소매만) 가능</td>            
+            <td><button onclick="shirtbtn(282)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5a/Shirt281a.png" alt="초록 단추 조끼"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(283)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7e/Shirt282.png" alt="토마토 셔츠"></button></td>
-            <td>토마토 셔츠</td>
-            <td>중요한 질문의 답이 적힌 셔츠: '토마토는'... (하지만 글이 지워져서 채소인지 과일인지 알 수 없다).</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/토마토" target="_blank">토마토</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(283)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7e/Shirt282.png" alt="토마토 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(284)"><img src="https://stardewvalleywiki.com/mediawiki/images/b/b9/Shirt283a.png" alt="술 달린 조끼"></button></td>
-            <td>술 달린 조끼</td>
-            <td>민소매 셔츠 위의 술 달린 갈색 조끼.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/차우더" target="_blank">차우더</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(284)"><img src="https://stardewvalleywiki.com/mediawiki/images/b/b9/Shirt283a.png" alt="술 달린 조끼"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(285)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a5/Shirt284a.png" alt="방울 셔츠"></button></td>
-            <td>방울 셔츠</td>
-            <td>형체가 불분명한 방울 무늬가 있는 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/숙성된 어란" target="_blank">숙성된 어란</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(285)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a5/Shirt284a.png" alt="방울 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(286)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4b/Shirt285.png" alt="자정의 개 재킷"></button></td>
-            <td>자정의 개 재킷</td>
-            <td>오징어 먹물을 사용해 짙은 암청색으로 염색된 재킷.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/오징어 먹물" target="_blank">오징어 먹물</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(286)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4b/Shirt285.png" alt="자정의 개 재킷"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(287)"><img src="https://stardewvalleywiki.com/mediawiki/images/3/3c/Shirt286.png" alt="새우 애호가 셔츠"></button></td>
-            <td>새우 애호가 셔츠</td>
-            <td>지속적으로 새우를 공급받아야 하는 입맛을 가진 분들을 위한 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/새우 칵테일" target="_blank">새우 칵테일</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(287)"><img src="https://stardewvalleywiki.com/mediawiki/images/3/3c/Shirt286.png" alt="새우 애호가 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(288)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/44/Shirt287.png" alt="티' 셔츠"></button></td>
-            <td>티' 셔츠</td>
-            <td>널리 알려진 음료를 기반으로 만든 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/녹차" target="_blank">녹차</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(288)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/44/Shirt287.png" alt="티' 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(289)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/76/Shirt288a.png" alt="무지갯빛 셔츠 (흰 소매)"></button></td>
-            <td>무지갯빛 셔츠 (흰 소매)</td>
-            <td>무지갯빛 에너지로 일렁이고 있습니다. 소매가 흰색입니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/무지갯빛 파편" target="_blank">무지갯빛 파편</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(289)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/76/Shirt288a.png" alt="무지갯빛 셔츠 (흰 소매)"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(290)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Shirt289a.png" alt="무지갯빛 셔츠 (검은 소매)"></button></td>
-            <td>무지갯빛 셔츠 (검은 소매)</td>
-            <td>무지갯빛 에너지로 일렁이고 있습니다. 소매가 어두운색입니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/무지갯빛 파편" target="_blank">무지갯빛 파편</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(290)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Shirt289a.png" alt="무지갯빛 셔츠 (검은 소매)"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(291)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/70/Shirt290.png" alt="장신구 셔츠"></button></td>
-            <td>장신구 셔츠</td>
-            <td>여러 가지 색의 큰 유리구슬이 달려있는 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/유물 상자" target="_blank">유물 상자</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(291)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/70/Shirt290.png" alt="장신구 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(292)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d3/Shirt291.png" alt="어둠의 정장"></button></td>
-            <td>어둠의 정장</td>
-            <td>색 바랜 붉은 손수건이 있는 검은 정장 상의.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/시들은 부케" target="_blank">시들은 부케</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(292)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d3/Shirt291.png" alt="어둠의 정장"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(293)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Mineral_Dog_Jacket.png" alt="미네랄 도그 재킷"></button></td>
-            <td>미네랄 도그 재킷</td>
-            <td>바다의 미량 미네랄이 주입되어 있습니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/바다 거품 푸딩" target="_blank">바다 거품 푸딩</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(293)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Mineral_Dog_Jacket.png" alt="미네랄 도그 재킷"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(294)"><img src="https://stardewvalleywiki.com/mediawiki/images/b/b5/Magenta_Shirt.png" alt="자홍색 셔츠"></button></td>
-            <td>자홍색 셔츠</td>
-            <td>마그마 버섯으로 특유의 색을 냈습니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/마그마 버섯" target="_blank">마그마 버섯</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(294)"><img src="https://stardewvalleywiki.com/mediawiki/images/b/b5/Magenta_Shirt.png" alt="자홍색 셔츠"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(295)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/eb/Ginger_Overalls.png" alt="진저 멜빵바지"></button></td>
-            <td>진저 멜빵바지</td>
-            <td>진저에일 색감으로 제작된 옷.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/진저 에일" target="_blank">진저 에일</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(295)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/eb/Ginger_Overalls.png" alt="진저 멜빵바지"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(296)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Banana_Shirt.png" alt="바나나 셔츠"></button></td>
-            <td>바나나 셔츠</td>
-            <td>바나나를 사랑한다면 이 셔츠를 고려해볼만합니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/ 바나나 푸딩" target="_blank"> 바나나 푸딩</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(296)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Banana_Shirt.png" alt="바나나 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(297)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Yellow_Suit.png" alt="노란 양복"></button></td>
-            <td>노란 양복</td>
-            <td>대담한 패션 선언을 담고 있는 복장.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/카오 니야우 마무앙" target="_blank">카오 니야우 마무앙</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(297)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Yellow_Suit.png" alt="노란 양복"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(298)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/2f/Hot_Pink_Shirt.png" alt="핫 핑크 셔츠"></button></td>
-            <td>핫 핑크 셔츠</td>
-            <td>열대 지방에 어울리는 트로피컬 핑크색 실크 셔츠.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/포이" target="_blank">포이</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(298)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/2f/Hot_Pink_Shirt.png" alt="핫 핑크 셔츠"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(299)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9c/Tropical_Sunrise_Shirt.png" alt="열대 일출 셔츠"></button></td>
-            <td>열대 일출 셔츠</td>
-            <td>코코넛 향이 납니다.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/열대 카레" target="_blank">열대 카레</a> 조합</li></ul></td>
-            <td>불가능</td>            
+            <td><button onclick="shirtbtn(299)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9c/Tropical_Sunrise_Shirt.png" alt="열대 일출 셔츠"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(300)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Island_Bikini.png" alt="아일랜드 비키니"></button></td>
-            <td>아일랜드 비키니</td>
-            <td>휴양지의 클래식.</td>
-             <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/황금 코코넛" target="_blank">황금 코코넛</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="shirtbtn(300)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Island_Bikini.png" alt="아일랜드 비키니"></button></td>           
           </tr>
         </table>
       </div>
