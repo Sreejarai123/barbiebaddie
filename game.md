@@ -3048,107 +3048,45 @@
       <div class="content-item" id="pants-content">
         <table>
           <tr>
-            <th>사진</th>
-            <th>이름</th>
-            <th>설명</th>
-            <th>얻는 방법</th>
-            <th>염색 여부</th>
+            <td><button onclick="pantsbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/78/Farmer_Pants.png" alt="	농부 바지"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/78/Farmer_Pants.png" alt="	농부 바지"></button></td>
-            <td>농부 바지</td>
-            <td>밭일을 오래 할 수 있도록 편하고 내구성 좋은 바지.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/크랜베리" target="_blank">크랜베리</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/딸기" target="_blank">딸기</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/야생 자두" target="_blank">야생 자두</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c5/Shorts.png" alt="반바지"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c5/Shorts.png" alt="반바지"></button></td>
-            <td>반바지</td>
-            <td>더운 여름날 입기 좋습니다... 다리가 감사할 겁니다.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/블루베리" target="_blank">블루베리</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/포도" target="_blank">포도</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/메운 고추" target="_blank">매운 고추</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/멜론" target="_blank">멜론</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Long_Dress.png" alt="롱 드레스"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Long_Dress.png" alt="롱 드레스"></button></td>
-            <td>롱 드레스</td>
-            <td>길고 흐르는 듯한 드레스.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/요정장미" target="_blank">요정장미</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/해바라기" target="_blank">해바라기</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fa/Skirt.png" alt="치마"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fa/Skirt.png" alt="치마"></button></td>
-            <td>치마</td>
-            <td>	귀여운 치마.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/푸른 재즈" target="_blank">푸른 재즈</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/튤립" target="_blank">튤립</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/92/Pleated_Skirt.png" alt="주름치마"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/92/Pleated_Skirt.png" alt="주름치마"></button></td>
-            <td>주름치마</td>
-            <td>귀여운 주름치마.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/양귀비" target="_blank">양귀비</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/여름별꽃" target="_blank">여름별꽃</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(6)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8d/Dinosaur_Pants.png" alt="공룡 바지"></button></td>         
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(6)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8d/Dinosaur_Pants.png" alt="공룡 바지"></button></td>
-            <td>공룡 바지</td>
-            <td>오래전에 멸종한 것으로 생각된 바지입니다!</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/공룡 마요네즈" target="_blank">공룡 마요네즈</a> 조합</li></ul></td>
-            <td>불가능	</td>            
+            <td><button onclick="pantsbtn(7)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a4/Grass_Skirt.png" alt="잔디 치마"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(7)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a4/Grass_Skirt.png" alt="잔디 치마"></button></td>
-            <td>잔디 치마</td>
-            <td>말린 잔디를 엮어서 만든 치마.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/건초" target="_blank">건초</a> 조합</li></ul></td>
-            <td>불가능	</td>            
+            <td><button onclick="pantsbtn(8)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8a/Genie_Pants.png" alt="지니 바지"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(8)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8a/Genie_Pants.png" alt="지니 바지"></button></td>
-            <td>지니 바지</td>
-            <td>아랫부분이 부풀어있는 바지. 당신의 소원이 이루어졌습니다!</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/고대 과일" target="_blank">고대 과일</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/스타푸르트" target="_blank">스타프루트</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(9)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/26/Baggy_Pants.png" alt="헐렁한 바지"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(9)"><img src="https://stardewvalleywiki.com/mediawiki/images/2/26/Baggy_Pants.png" alt="헐렁한 바지"></button></td>
-            <td>헐렁한 바지</td>
-            <td>여유 공간이 많은 바지.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/슬라임 알" target="_blank">슬라임 알 (아무 색상)</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(10)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Simple_Dress.png" alt="	간단한 드레스"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(10)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Simple_Dress.png" alt="	간단한 드레스"></button></td>
-            <td>	간단한 드레스</td>
-            <td>부드럽고 매끄러운 중간 길이의 드레스.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/벌꿀" target="_blank">벌꿀 (아무거나)</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(11)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1e/Relaxed_Fit_Pants.png" alt="편안한 바지"></button></td>            
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(11)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1e/Relaxed_Fit_Pants.png" alt="편안한 바지"></button></td>
-            <td>편안한 바지</td>
-            <td>다리를 위한 여유 공간이 조금 있는 바지.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/사과" target="_blank">사과</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/살구" target="_blank">살구</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/체리" target="_blank">체리</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/석류" target="_blank">석류</a> 조합</li></ul></td>
-            <td>가능</td>            
-          </tr>
-          <tr>
-            <td><button onclick="pantsbtn(12)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4a/Relaxed_Fit_Shorts.png" alt="편안한 반바지"></button></td>
-            <td>편안한 반바지</td>
-            <td>다리를 위한 여유 공간이 조금 있는 바지.</td>
-            <td><ul><li>옷감과 <a href="https://ko.stardewvalleywiki.com/오렌지" target="_blank">오렌지</a> 조합</li><li>옷감과 <a href="https://ko.stardewvalleywiki.com/복숭아" target="_blank">복숭아</a> 조합</li></ul></td>
-            <td>가능</td>            
+            <td><button onclick="pantsbtn(12)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4a/Relaxed_Fit_Shorts.png" alt="편안한 반바지"></button></td>            
           </tr>
         </table>
       </div>
       <div class="content-item" id="shoes-content">
         <table>
-          <tr>
-            <th>사진</th>
-            <th>이름</th>
-            <th>설명</th>
-            <th>얻는 방법</th>
-            <th>염색 여부</th>
-          </tr>
           <tr>
             <td><button onclick="shoesbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Sneakers.png" alt="운동화"></button></td>
           </tr>
