@@ -26,13 +26,12 @@
       <canvas id="blank"></canvas>
       <img id="results">
     </div>
-    <div id="arrows">
-      <i class="fas fa-long-arrow-alt-left fa-4x" onclick="arrowL()"></i>
-      <i class="fas fa-long-arrow-alt-right fa-4x" onclick="arrowR()"></i>
-    </div>
     <div id="sex">
       <button id="man-btn" onclick="man()">
         <i class="fas fa-mars fa-5x"></i>
+      </button>
+      <button id="woman-btn" onclick="woman()">
+        <i class="fas fa-venus fa-5x"></i>
       </button>
       <button id="woman-btn" onclick="woman()">
         <i class="fas fa-venus fa-5x"></i>
