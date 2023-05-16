@@ -3,13 +3,12 @@
   customization to original Midnight theme 
   found through GitHub Pages Themes
  -->
-<html lang="{{ site.lang | default: "en-US" }}">
+ <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
@@ -23,18 +22,15 @@
 
   </head>
   <body>
-      
     <div class="wrapper">
 
       <section>
-        <!-- nighthawk coding society has altered arrangement and inserted navigation that is updated in independent file -->
-        <div id="title">
-          <h1><a href={{ site.gitorg }}>{{ site.title | default: site.github.repository_name }}</a></h1>
+        <!--nighthawk coding society has altered arrangement and inserted navigation that is updated in independent file -->
+          <h1><a href="{{ site.gitorg }}">{{ site.title | default: site.github.repository_name }}</a></h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
           {% include home.html %}
         </div>
-
         <!-- this is Jekyll magic, each md file in site will be inserted here -->
         {{ content }}
 

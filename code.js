@@ -1,3 +1,5 @@
+import "nes.css/css/nes.min.css";
+
 var myMusic;
 var mySound;
 

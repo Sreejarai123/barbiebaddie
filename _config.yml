@@ -1,6 +1,5 @@
-theme: jekyll-theme-midnight
-title: "Leuck Family Reunion"
-description: "June 26 to July 1 2023"
-gitorg: "https://github.com/jm1021/leuck_reunion"
+title: "Code Couture"
+description: "Get ready to dress to impress, break the fashion barriers, and let your inner geek shine in Code Couture – the ultimate fusion of computer science and haute couture. It's time to redefine fashion, one line of code at a time!"
+gitorg: "https://github.com/codecouturebaddies/codec"
 google_analytics:
 exclude: /path

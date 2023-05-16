@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "./node_modules/nes.css/css/nes.css";
 
 /* "row style" is flexible size and aligns pictures in center */
 .row {
