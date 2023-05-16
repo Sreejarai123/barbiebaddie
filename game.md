@@ -10,6 +10,19 @@
   <title>Stardew Dress Up</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scroll.css">
+  <style>
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width:50%;
+      padding-right:10%;
+    }
+    div.relative {
+      position: relative;
+      height:500px;
+    }
+  </style>
 </head>
 <body>
   <div id="display">
@@ -39,7 +52,7 @@
     </div>
   </div>
 
-  <div id="setting">
+  <div id="setting" class="absolute">
     <div id="menu">
       <div class="menu-content">
         <button class="menu-btn" id="body-btn" onclick="menu(0, 'orange', 'rgb(255, 233, 172)')">
@@ -67,7 +80,7 @@
         </button>
       </div>
     </div>
-    <div id="content">
+    <div id="content" class="relative">
       <div class="content-item" id="body-content">
         <div id="bodyinf">
           <div class="bodyinfwrap" id="bodyinf-Up">
