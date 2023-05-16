@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -3152,139 +3151,57 @@
           </tr>
           <tr>
             <td><button onclick="shoesbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Sneakers.png" alt="운동화"></button></td>
-            <td>운동화</td>
-            <td>조금 얇지만... 유행하는 디자인입니다!</td>
-            <td><ul><li>"가입" 퀘스트 완료 후 <a href="https://ko.stardewvalleywiki.com/모험가의 길드" target="_blank">모험가의 길드</a>에서 판매</li>
-                <li><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 1~40층의 몬스터 또는 상자/통에서 확률 드랍</li>
-                <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e8/Rubber_Boots.png" alt="고무 장화"></button></td>
-            <td>고무 장화</td>
-            <td>비바람으로부터 보호해줍니다.</td>
-            <td><ul><li>희귀한 녹색 슬라임 드랍</li>
-              <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Leather_Boots.png" alt="가죽 장화"></button></td>
-            <td>가죽 장화</td>
-            <td>아주 탄력 있는 가죽으로 제작되었습니다.</td>
-            <td><ul><li><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 10층에 있는 보물 상자 보상</li>
-              <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Work_Boots.png" alt="노동 장화"></button></td>
-            <td>노동 장화</td>
-            <td>추가적인 보호를 제공하기 위해 발가락 부분에 철판으로 덧대어져 있습니다.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Combat_Boots.png" alt="전투 장화"></button></td>
-            <td>전투 장화</td>
-            <td>철망으로 강화되어 있습니다.</td>
-            <td><ul><li><a href="https://ko.stardewvalleywiki.com/모험가의 길드" target="_blank">모험가의 길드</a>에서 판매</li>
-              <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(6)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/93/Tundra_Boots.png" alt="툰트라 장화"></button></td>
-            <td>툰트라 장화</td>
-            <td>솜털 안감 덕에 발목이 따뜻합니다.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 50층에 있는 보물 상자 보상</td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(7)"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e0/Leprechaun_Shoes.png" alt="레프러콘 신발"></button></td>
-            <td>레프러콘 신발</td>
-            <td>버클이 순금으로 이루어져 있습니다.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/철로" target="_blank">
-              기차역</a></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(8)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4e/Thermal_Boots.png" alt="보온 장화"></button></td>
-            <td>보온 장화</td>
-            <td>극한의 날씨를 감안해서 고안되었습니다.</td>
-            <td><ul><li><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a>의 몬스터에게 확률 드랍</li>
-              <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(9)"><img src="https://stardewvalleywiki.com/mediawiki/images/1/15/Cowboy_Boots.png" alt="카우보이 장화"></button></td>
-            <td>카우보이 장화</td>
-            <td>농촌 패선의 최고봉입니다.</td>
-            <td>획득 불가</td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(10)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8d/Dark_Boots.png" alt="어둠의 장화"></button></td>
-            <td>어둠의 장화</td>
-            <td>두꺼운 검은 가죽으로 제작되었습니다.</td>
-            <td><ul><li><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 80층 도달 후 <a href="https://ko.stardewvalleywiki.com/모험가의 길드" target="_blank">모험가의 길드</a>에서 판매</li><li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(11)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fa/Firewalker_Boots.png" alt="불길 장화"></button></td>
-            <td>불길 장화</td>
-            <td>가장 뜨거운 마그마도 견딜 수 있다고 합니다.</td>
-            <td><ul><li><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 80층에 있는 보물 상자 보상</li>
-              <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(12)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/98/Genie_Shoes.png" alt="지니 신발"></button></td>
-            <td>지니 신발</td>
-            <td>천에 신기한 에너지가 깃들어있습니다.</td>
-            <td><ul><li>해골 동굴 드랍</li>
-              <li><a href="https://ko.stardewvalleywiki.com/%EB%82%9A%EC%8B%9C#.EB.B3.B4.EB.AC.BC_.EC.83.81.EC.9E.90" target="_blank">보물 상자 낚시</a></li></ul></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(13)"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6e/Space_Boots.png" alt="우주 장화"></button></td>
-            <td>우주 장화</td>
-            <td>이리듐으로 엮어서 보랏빛 광택이 돕니다.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 110층에 있는 보물 상자 보상</td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(14)"><img src="https://stardewvalleywiki.com/mediawiki/images/a/ac/Emily%27s_Magic_Boots.png" alt="에밀리의 마법 장화"></button></td>
-            <td>에밀리의 마법 장화</td>
-            <td>에밀리가 사랑을 담아 만든 장화. 100% 자연분해 가능한 재질입니다!</td>
-            <td><a href="https://ko.stardewvalleywiki.com/에밀리" target="_blank">에밀리</a>의 14 하트 이벤트 중 지급</td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(15)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Cinderclown_Shoes.png" alt="잉걸불광대 신발"></button></td>
-            <td>잉걸불광대 신발</td>
-            <td>유명한 드워프 어릿광대의 마법이 깃든 신발.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/화산 던전" target="_blank">화산 던전 가게</a></td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(16)"><img src="https://stardewvalleywiki.com/mediawiki/images/9/98/Mermaid_Boots.png" alt="인어 장화"></button></td>
-            <td>인어 장화</td>
-            <td>인어 비늘이 보호의 기운을 발산합니다.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/화산 던전" target="_blank">화산 던전</a> 보물 상자에서 획득 가능</td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(17)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/fb/Dragonscale_Boots.png" alt="용비늘 장화"></button></td>
-            <td>용비늘 장화</td>
-            <td>빛이 일렁이는 굉장히 튼튼한 장화.</td>
-            <td><a href="https://ko.stardewvalleywiki.com/화산 던전" target="_blank">화산 던전</a> 보물 상자에서 획득 가능</td>
-            <td>불가능</td>
           </tr>
           <tr>
             <td><button onclick="shoesbtn(18)"><img src="https://stardewvalleywiki.com/mediawiki/images/6/69/Crystal_Shoes.png" alt="수정 신발"></button></td>
-            <td>수정 신발</td>
-            <td>이 반짝이는 신발은 발을 아주 안전하게 보호해 줄 것입니다.</td>
-            <td><ul><li><a href="https://ko.stardewvalleywiki.com/해골 동굴" target="_blank">해골 동굴</a> 드랍</li>
-              <li><a href="https://ko.stardewvalleywiki.com/광산" target="_blank">광산</a> 110층 상자에서 획득 가능(리믹스 광산 보상인 경우만)</li></ul></td>
-            <td>불가능</td>
           </tr>
         </table>
       </div>
