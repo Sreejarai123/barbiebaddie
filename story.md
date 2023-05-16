@@ -11,11 +11,11 @@
       }
     .typing {
   width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(22);
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
+  font-family: Press+Start+2P;
   font-size: 2em;
 }
   @keyframes typing {
@@ -35,7 +35,7 @@
   animation-delay: 5s;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
+  font-family: Press+Start+2P;
   font-size: 2em;
 }
     </style>
