@@ -88,18 +88,6 @@
           </div>
           <div class="bodyinfwrap" id="bodyinf-Down">
             <h2 class="bodyinfheader">악세사리</h2>
-            <div id="accessorybox">
-              <div class="body-arrow" id="L-arrow">
-                <i class="fa fa-solid fa-angle-left fa-3x" id="accessory-L" onclick="accessorybtnL()"></i>
-              </div>
-              <canvas id="accessoryDcanvas"></canvas>
-              <div class="body-arrow" id="R-arrow">
-                <i class="fa fa-solid fa-angle-right fa-3x" id="accessory-R" onclick="accessorybtnR()"></i>
-              </div>
-            </div>
-            <div id="accessory-setting">
-              <div><button id="accessoryundo" onclick="accessoryundobtn()">취소하기</button></div>
-            </div>
           </div>
         </div>
       </div>
