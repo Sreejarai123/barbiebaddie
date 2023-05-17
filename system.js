@@ -413,6 +413,13 @@ var shirtcontext = shirtcanvas.getContext('2d');
 var shirtimg = new Image();
 shirtimg.crossOrigin="anonymous";
 
+var shirtImages = [
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top1.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top2.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top3.png',
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top4.png",
+];
+
 function shirtSYwithI(n) {
   return (-16/3 * n * n * n) + (20 * n * n) + (-20/3 * n);
 }
@@ -421,8 +428,8 @@ var ShareShirt = 1;
 var shirtSX = 0;
 var shirtSY = 0;
 
-function shirtbtn(n) {
-  
+
+function shirtbtn(n, shirtIndex) {
   shirtnumrepeat++;
   shirtnum.push(n);
   if (shirtnum.length > 10) {
@@ -431,99 +438,21 @@ function shirtbtn(n) {
 
   if (samebutton(shirtnum, shirtnumrepeat) === true) {
     shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasedraw(n);
+    shirtbasedraw(n, shirtIndex);
   } else {
+    shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
 
-  shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-  
-  if (n % 16 === 1) {
-    shirtSX = 0;
-  } else if (n % 16 === 2) {
-    shirtSX = 8;
-  } else if (n % 16 === 3) {
-    shirtSX = 16;
-  } else if (n % 16 === 4) {
-    shirtSX = 24;
-  } else if (n % 16 === 5) {
-    shirtSX = 32;
-  } else if (n % 16 === 6) {
-    shirtSX = 40;
-  } else if (n % 16 === 7) {
-    shirtSX = 48;
-  } else if (n % 16 === 8) {
-    shirtSX = 56;
-  } else if (n % 16 === 9) {
-    shirtSX = 64;
-  } else if (n % 16 === 10) {
-    shirtSX = 72;
-  } else if (n % 16 === 11) {
-    shirtSX = 80;
-  } else if (n % 16 === 12) {
-    shirtSX = 88;
-  } else if (n % 16 === 13) {
-    shirtSX = 96;
-  } else if (n % 16 === 14) {
-    shirtSX = 104;
-  } else if (n % 16 === 15) {
-    shirtSX = 112;
-  } else if (n % 16 === 0) {
-    shirtSX = 120;
-  }
+    shirtimg.onload = function() {
+      shirtcontext.drawImage(shirtimg, 0, 0); 
+    }
 
-  if (n / 16 <= 1) {
-    ShareShirt = 0;
-  } else if (n / 16 <= 2) {
-    ShareShirt = 1;
-  } else if (n / 16 <= 3) {
-    ShareShirt = 2;
-  } else if (n / 16 <= 4) {
-    ShareShirt = 3;
-  } else if (n / 16 <= 5) {
-    ShareShirt = 4;
-  } else if (n / 16 <= 6) {
-    ShareShirt = 5;
-  } else if (n / 16 <= 7) {
-    ShareShirt = 6;
-  } else if (n / 16 <= 8) {
-    ShareShirt = 7;
-  } else if (n / 16 <= 9) {
-    ShareShirt = 8;
-  } else if (n / 16 <= 10) {
-    ShareShirt = 9;
-  } else if (n / 16 <= 11) {
-    ShareShirt = 10;
-  } else if (n / 16 <= 12) {
-    ShareShirt = 11;
-  } else if (n / 16 <= 13) {
-    ShareShirt = 12;
-  } else if (n / 16 <= 14) {
-    ShareShirt = 13;
-  } else if (n / 16 <= 15) {
-    ShareShirt = 14;
-  } else if (n / 16 <= 16) {
-    ShareShirt = 15;
-  } else if (n / 16 <= 17) {
-    ShareShirt = 16;
-  } else if (n / 16 <= 18) {
-    ShareShirt = 17;
-  } else if (n / 16 <= 19) {
-    ShareShirt = 18;
-  }
+    shirtimg.src = shirtImages[shirtIndex];
 
-  shirtSY = shirtSYwithI(i) + (ShareShirt * 32);
-  
-  shirtimg.onload = function() {
-    shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);    
-  }
-
-  shirtimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/shirt/shirts.png';
-
-  shirtbasedraw(n);
+    shirtbasedraw(n, shirtIndex);
   }
 }
 
-function shirtbasedraw(n) {
-
+function shirtbasedraw(n, shirtIndex) {
   shirtbasenumrepeat++;
   shirtbasenum.push(n);
   if (shirtbasenum.length > 10) {
@@ -533,111 +462,15 @@ function shirtbasedraw(n) {
   if (samebutton(shirtbasenum, shirtbasenumrepeat) === true) {
     shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
   } else {
-
-  shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-
-  if (n === 129) {
-    shirtSX = 128;
-  }
-
-  if (n === 130) {
-    shirtSX = 136;
-  }
-
-  if (n === 131) {
-    shirtSX = 144;
-  }
-
-  if (n === 133) {
-    shirtSX = 160;
-  }
-
-  if (n === 134) {
-    shirtSX = 168;
-  }
-
-  if (n === 135) {
-    shirtSX = 176;
-  }
-
-  if (n === 137) {
-    shirtSX = 192;
-  }
-
-  if (n === 140) {
-    shirtSX = 216;
-  }
-
-  if (n === 141) {
-    shirtSX = 224;
-  }
-
-  if (n === 142) {
-    shirtSX = 232;
-  }
-
-  if (n === 143) {
-    shirtSX = 240;
-  }
-
-  if (n === 153) {
-    shirtSX = 192;
-  }
-
-  if (n === 154) {
-    shirtSX = 200;
-  }
-
-  if (n === 155) {
-    shirtSX = 208;
-  }
-
-  if (n === 177) {
-    shirtSX = 128;
-  }
-
-  if (n === 178) {
-    shirtSX = 136;
-  }
-
-  if (n === 179) {
-    shirtSX = 144;
-  }
-
-  if (n === 192) {
-    shirtSX = 248;
-  }
-
-  if (n === 219) {
-    shirtSX = 208;
-  }
-
-  if (n === 249) {
-    shirtSX = 192;
-  }
-
-  if (n === 262) {
-    shirtSX = 168;
-  }
-
-  if (n === 274) {
-    shirtSX = 136;
-  }
-
-  if (n === 300) {
-    shirtSX = 216;
-  }
-
-  shirtSY = shirtSYwithI(i) + (ShareShirt * 32);
+    shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
   
-  shirtbaseimg.onload = function() {
-    shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);    
-  }
+    shirtbaseimg.onload = function() {
+      shirtbasecontext.drawImage(shirtbaseimg, 0, 0);
+    }
 
-  shirtbaseimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/shirt/shirts.png';
+    shirtbaseimg.src = shirtImages[shirtIndex];
   }
 }
-
 //바지 버튼 클릭시
 
 var pantsnum = [];
@@ -976,9 +809,9 @@ function arrowR() {
     } else {
     shirtSY = shirtSYwithI(i) + (ShareShirt * 32);
     shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
+    shirtcontext.drawImage(0, 0, canvas.width, canvas.height);
     shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
+    shirtbasecontext.drawImage(0, 0, canvas.width, canvas.height);
     }
 
     //바지
@@ -1205,9 +1038,9 @@ function arrowR() {
     } else {
     shirtSY = shirtSYwithI(i) + (ShareShirt * 32);
     shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
+    shirtcontext.drawImage(0, 0, canvas.width, canvas.height)
     shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);  
+    shirtbasecontext.drawImage(0, 0, canvas.width, canvas.height);  
     } 
     
     //바지
@@ -1286,9 +1119,9 @@ function arrowL() {
     shirtSY = shirtSYwithI(i) + (ShareShirt * 32);
     backheight = 2;
     shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight - backheight, 70, 20);
+    shirtcontext.drawImage(0, 0, canvas.width, canvas.height);
     shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20); 
+    shirtbasecontext.drawImage(0, 0, canvas.width, canvas.height); 
     backheight = 0;
     }
 
@@ -1361,9 +1194,9 @@ function arrowL() {
     } else {
     shirtSY = shirtSYwithI(i) + (ShareShirt * 32);
     shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
+    shirtcontext.drawImage(0, 0, canvas.width, canvas.height);
     shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
+    shirtbasecontext.drawImage(0, 0, canvas.width, canvas.height);
     }
 
     //바지

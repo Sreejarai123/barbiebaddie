@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/74b8c9745c.js" crossorigin="anonymous"></script>
-  <title>Stardew Dress Up</title>
+  <title>Code Couture</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scroll.css">
   <style>
@@ -131,16 +131,16 @@
       <div class="content-item" id="shirt-content">
         <table>
           <tr>
-            <td><button onclick="shirtbtn(1)"><img src="images/tops/top1.png" alt="전형적인 멜빵바지"></button></td>
+            <td><button onclick="shirtbtn(0, 1)"><img src="images/tops/top1.png" alt="전형적인 멜빵바지"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(2)"><img src="images/tops/top2.png" alt="황금 테두리 셔츠"></button></td>          
+            <td><button onclick="shirtbtn(1, 2)"><img src="images/tops/top2.png" alt="황금 테두리 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(3)"><img src="images/tops/top3.png" alt="무지갯빛 셔츠"></button></td>        
+            <td><button onclick="shirtbtn(2, 3)"><img src="images/tops/top3.png" alt="무지갯빛 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(4)"><img src="images/tops/top4.png" alt="펜던트 셔츠"></button></td>           
+            <td><button onclick="shirtbtn(3, 4)"><img src="images/tops/top4.png" alt="펜던트 셔츠"></button></td>           
           </tr>
         </table>
       </div>
