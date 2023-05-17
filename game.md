@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/74b8c9745c.js" crossorigin="anonymous"></script>
-  <title>Code Couture</title>
+  <title>CODE COUTURE</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scroll.css">
   <style>
@@ -112,19 +112,19 @@
      <div class="content-item" id="hat-content">
         <table>
           <tr>
-            <td><button onclick="hatbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Shirt000.png" alt="전형적인 멜빵바지"></button></td>
+            <td><button onclick="hatbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Shirt000.png" alt="hat1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hatbtn(223)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Shirt222.png" alt="황금 테두리 셔츠"></button></td>          
+            <td><button onclick="hatbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Shirt222.png" alt="hat2"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="hatbtn(224)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/46/Shirt223.png" alt="무지갯빛 셔츠"></button></td>        
+            <td><button onclick="hatbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/46/Shirt223.png" alt="hat4"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="hatbtn(225)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Shirt224.png" alt="펜던트 셔츠"></button></td>           
+            <td><button onclick="hatbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Shirt224.png" alt="hat5"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="hatbtn(226)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Shirt225.png" alt="고온 셔츠"></button></td>        
+            <td><button onclick="hatbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Shirt225.png" alt="hat6"></button></td>        
           </tr>
         </table>
       </div>
@@ -147,41 +147,41 @@
       <div class="content-item" id="pants-content">
         <table>
           <tr>
-            <td><button onclick="pantsbtn(1)"><img src="images/bottoms/bottom1.png" alt="	농부 바지"></button></td>           
+            <td><button onclick="pantsbtn(1)"><img src="images/bottoms/bottom1.png" alt="pants1"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(2)"><img src="images/bottoms/bottom2.png" alt="반바지"></button></td>          
+            <td><button onclick="pantsbtn(2)"><img src="images/bottoms/bottom2.png" alt="pants2"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(3)"><img src="images/bottoms/bottom3.png" alt="롱 드레스"></button></td>           
+            <td><button onclick="pantsbtn(3)"><img src="images/bottoms/bottom3.png" alt="pants3"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(4)"><img src="images/bottoms/bottom4.png" alt="치마"></button></td>          
+            <td><button onclick="pantsbtn(4)"><img src="images/bottoms/bottom4.png" alt="pants4"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(5)"><img src="images/bottoms/bottom5.png" alt="주름치마"></button></td>          
+            <td><button onclick="pantsbtn(5)"><img src="images/bottoms/bottom5.png" alt="pants5"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(6)"><img src="images/bottoms/bottom6.png" alt="공룡 바지"></button></td>         
+            <td><button onclick="pantsbtn(6)"><img src="images/bottoms/bottom6.png" alt="pants6"></button></td>         
           </tr>
         </table>
       </div>
       <div class="content-item" id="shoes-content">
         <table>
           <tr>
-            <td><button onclick="shoesbtn(1)"><img src="images/shoes/shoe1.png" alt="운동화"></button></td>
+            <td><button onclick="shoesbtn(1)"><img src="images/shoes/shoe1.png" alt="shoe1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(2)"><img src="images/shoes/shoe2.png" alt="고무 장화"></button></td>
+            <td><button onclick="shoesbtn(2)"><img src="images/shoes/shoe2.png" alt="shoe2"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(3)"><img src="images/shoes/shoe3.png" alt="가죽 장화"></button></td>
+            <td><button onclick="shoesbtn(3)"><img src="images/shoes/shoe3.png" alt="shoe3"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(4)"><img src="images/shoes/shoe4.png" alt="노동 장화"></button></td>
+            <td><button onclick="shoesbtn(4)"><img src="images/shoes/shoe4.png" alt="shoe4"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(5)"><img src="images/shoes/shoe5.png" alt="전투 장화"></button></td>
+            <td><button onclick="shoesbtn(5)"><img src="images/shoes/shoe5.png" alt="shoe5"></button></td>
           </tr>
         </table>
       </div>
