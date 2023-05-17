@@ -22,6 +22,9 @@
       position: relative;
       height:500px;
     }
+    body {
+      padding-left: 10%;
+    }
   </style>
 </head>
 <body>
@@ -40,18 +43,17 @@
       <img id="results">
     </div>
     <div id="sex">
-      <button id="man-btn" onclick="man()">
-        <i class="fas fa-mars fa-5x"></i>
+      <button id="man-btn" onclick="medskin()">
+        <span class="medskin-icon"></span>
       </button>
-      <button id="woman-btn" onclick="woman()">
-        <i class="fas fa-venus fa-5x"></i>
+      <button id="woman-btn" onclick="lightskin()">
+        <span class="lightskin-icon"></span>
       </button>
-      <button id="woman-btn" onclick="woman()">
-        <i class="fas fa-venus fa-5x"></i>
+      <button id="woman-btn" onclick="darkskin()">
+        <span class="darkskin-icon"></span>
       </button>
     </div>
   </div>
-
   <div id="setting" class="absolute">
     <div id="menu">
       <div class="menu-content">
@@ -101,6 +103,9 @@
           </div>
           <div class="bodyinfwrap" id="bodyinf-Down">
             <h2 class="bodyinfheader">악세사리</h2>
+            <div id="accessorybox">
+              <canvas id="accessoryDcanvas"></canvas>
+            </div>
           </div>
         </div>
       </div>

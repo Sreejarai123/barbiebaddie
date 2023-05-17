@@ -63,7 +63,7 @@ function accessorybtnR() {
   accessorybtn();
 }
 
-function accessorybtn() {
+/* function accessorybtn() {
   
   if (accessoryundo === true) {
     document.querySelector('#accessoryundo').innerHTML = '취소하기'
@@ -116,6 +116,7 @@ function accessorybtn() {
   }
   accessoryimg.src = 'https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/accessories/accessories.png';
 }
+*/
 
 var accessoryundo = false;
 
@@ -728,21 +729,14 @@ var canvas = document.getElementById('base');
 var context = canvas.getContext('2d');
 
 var baseimg = new Image();
-var baseArmimg = new Image();
 
-baseimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/base/farmer_base.png';
+baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base1.png';
 baseimg.crossOrigin = "Anonymous";
 var baseimgSX = 0;
 var baseimgSY = 1;
 
-baseArmimg.src = 'https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/base/farmer_base.png';
-baseArmimg.crossOrigin = "Anonymous";
-var baseArmimgSX = 96;
-var baseArmimgSY = 0;
-
 baseimg.onload = function() {
-  context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-  context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+  context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
 }
 
 //신발 버튼 클릭시
@@ -774,41 +768,35 @@ function shoesbtn(n) {
 
   if (samebutton(shoenum, shoenumrepeat) === true) {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-    context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
   } else {
   
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
+  context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
   FootColor(n);
   LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
   RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
-  context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
   
   shoebtnnum = n;
   
   if (i === 0) {  
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-    context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
     RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
   } else if (i === 1) {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-    context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
     RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
   } else if (i === 2) {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-    context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
     RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
   } else if (i === 3) {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-    context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     LeftFootPosition(144, 116, 25, 3, 137, 118, 29, 3, 133, 121, 28, 2);
     RightFootPosition(116, 115, 18, 2, 108, 116, 24, 2, 104, 117, 26, 2);
   }
@@ -938,15 +926,13 @@ function arrowR() {
     baseArmimgSY = 33;
     if (samebutton(shoenum, shoenumrepeat)) {
       context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     } else {
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
       FootColor(shoebtnnum);
       LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
       RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
     }
 
     //머리
@@ -1010,18 +996,16 @@ function arrowR() {
 
     //몸통
     baseimgSY = 65;
-    baseArmimgSY = 65;
     if (samebutton(shoenum, shoenumrepeat)) {
       context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     } else {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
     FootColor(shoebtnnum);
     LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
     RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
-    context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     }
 
     //머리
@@ -1084,7 +1068,6 @@ function arrowR() {
 
     //몸통
     baseimgSY = 33;
-    baseArmimgSY = 33;
     if (samebutton(shoenum, shoenumrepeat)) {
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.translate(canvas.width, 0);
@@ -1554,32 +1537,15 @@ function arrowL() {
 
 //성별 클릭했을 때
 
-function man() {
+function medskin() {
   
   context.clearRect(0, 0, canvas.width, canvas.height);
-  baseimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/base/farmer_base.png';
-  baseArmimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/base/farmer_base.png';
+  baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base1.png';
+  baseArmimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base1.png';
   baseimg.onload = function() {
     if (samebutton(shoenum, shoenumrepeat)) {
-      context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
-    } else {
-      context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
-      FootColor(shoebtnnum);
-      if (i === 0) {  
-        LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
-        RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
-      } else if (i === 1) {
-        LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
-        RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
-      } else if (i === 2) {
-        LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
-        RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
-      } else if (i === 3) {
-        LeftFootPosition(144, 116, 25, 3, 137, 118, 29, 3, 133, 121, 28, 2);
-        RightFootPosition(116, 115, 18, 2, 108, 116, 24, 2, 104, 117, 26, 2);
-      }
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
+      context.drawImage(baseArmimg, 0, 0, canvas.width, canvas.height);
     }
   }
   
@@ -1636,19 +1602,95 @@ function man() {
   }
 }
 
-function woman() {
+function lightskin() {
   
   context.clearRect(0, 0, canvas.width, canvas.height);
-  baseimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/base/farmer_girl_base.png';
-  baseArmimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/base/farmer_girl_base.png';
+  baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base2.png';
 
   baseimg.onload = function() {
     if (samebutton(shoenum, shoenumrepeat)) {
-      context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
     } else {
-      context.drawImage(baseimg, baseimgSX, baseimgSY, 16, 33, 76, 36, 160, 95);
-      context.drawImage(baseArmimg, baseArmimgSX, baseArmimgSY, 16, 33, 76, 30, 160, 95);
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
+      FootColor(shoebtnnum);
+      if (i === 0) {  
+        LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
+        RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
+      } else if (i === 1) {
+        LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
+        RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
+      } else if (i === 2) {
+        LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
+        RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
+      } else if (i === 3) {
+        LeftFootPosition(144, 116, 25, 3, 137, 118, 29, 3, 133, 121, 28, 2);
+        RightFootPosition(116, 115, 18, 2, 108, 116, 24, 2, 104, 117, 26, 2);
+      }
+    }
+  }
+
+  hairheight = 1;
+
+  if (hairundo) {
+    haircontext.clearRect(0, 0, canvas.width, canvas.height);
+  } else {
+  haircontext.clearRect(0, 0, canvas.width, canvas.height);
+  haircontext.drawImage(hairimg, hairSX, hairSY, 16, 33, 74, 37 + hairheight, 170, 90); 
+  }
+
+  accessoryheight = 3;
+
+  if (accessoryundo === true) {
+    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
+  } else {
+  accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
+  accessorycontext.drawImage(accessoryimg, accessorySX, accessorySY, 17, 20, 62, 35 + accessoryheight, 200, 65); 
+  if (i === 2) {
+    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  }
+  
+  hatheight = 1;
+
+  if (samebutton(hatnum, hatnumrepeat)) {
+    hatcontext.clearRect(0, 0, canvas.width, canvas.height);
+  } else {
+  hatcontext.clearRect(0, 0, canvas.width, canvas.height);
+  hatcontext.drawImage(hatimg, hatSX, hatSY, 20, 20, 60, 24 + hatheight, 190, 60);
+  }
+
+  shirtheight = 2;
+
+  if (samebutton(shirtnum, shirtnumrepeat) && samebutton(shirtbasenum, shirtbasenumrepeat)) {
+    shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
+    shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
+  } else {
+  shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
+  shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20); 
+  shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
+  shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);  
+  }
+
+  pantsheight = 3;
+
+  if (samebutton(pantsnum, pantsnumrepeat)) {
+    pantscontext.clearRect(0, 0, canvas.width, canvas.height);
+  } else {
+  pantscontext.clearRect(0, 0, canvas.width, canvas.height);
+  pantscontext.drawImage(pantsimg, pantsSX, pantsSY, 16, 33, 77, 30 + pantsheight, 160, 95);
+  }
+}
+
+function darkskin() {
+  
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base3.png';
+
+  baseimg.onload = function() {
+    if (samebutton(shoenum, shoenumrepeat)) {
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
+    } else {
+      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
       FootColor(shoebtnnum);
       if (i === 0) {  
         LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);

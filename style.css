@@ -29,8 +29,8 @@
     margin: 20% 0 0 0;
     position: relative;
     border: 2px solid rgb(63, 61, 50);
-    width: 125px; 
-    height: 250px;
+    width: 150px; 
+    height: 444.88px;
     background-color: white;
   }
   
@@ -350,15 +350,6 @@
     cursor: pointer;
   }
   
-  #accessoryDcanvas {
-    width: 192px;
-    border: rgb(243, 158, 0) 2px solid;
-    background-size: 70% 70%;
-    background-image: url('../StardewDressUp/accessories.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
   #accessory-R:hover {
     cursor: pointer;
   }
@@ -530,4 +521,21 @@
     box-sizing: border-box;
     overflow: auto;
   }
-  
+  .medskin-icon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: #be8261; /* Replace with your desired color */
+  }
+  .lightskin-icon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: #d6a88a; /* Replace with your desired color */
+  }
+  .darkskin-icon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: #5b402f; /* Replace with your desired color */
+  }
