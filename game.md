@@ -63,7 +63,7 @@
       </div>
       <div class="menu-content">
         <button class="menu-btn" id="hat-btn" onclick="menu(1, 'orange', 'rgb(255, 233, 172)')">
-          <i class="fab fa-redhat fa-5x"></i>
+          <img src="images/hair/hair-salon.png" alt="hat">
         </button>
       </div>
       <div class="menu-content">
