@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/74b8c9745c.js" crossorigin="anonymous"></script>
-  <title>Stardew Dress Up</title>
+  <title>CODE COUTURE</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scroll.css">
   <style>
