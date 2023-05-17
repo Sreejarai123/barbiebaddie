@@ -663,7 +663,7 @@ function pantsbtn(n) {
   if (pantsnum.length > 10) {
     pantsnum.splice(0, pantsnum.length - 10);
   }
-
+//to remove the pants on character
   if (samebutton(pantsnum, pantsnumrepeat) === true) {
     pantscontext.clearRect(0, 0, canvas.width, canvas.height);
   } else {
@@ -671,8 +671,7 @@ function pantsbtn(n) {
   pantscontext.clearRect(0, 0, canvas.width, canvas.height);
 
   if (n === 1) {
-    pantsSX = 0;
-    pantsPositionY = 0;
+    pantsimg.src='images/bottoms/bottom1.png';
   } else if (n === 2) {
     pantsSX = 192;
     pantsPositionY = 0;
@@ -688,25 +687,6 @@ function pantsbtn(n) {
   } else if (n === 6) {
     pantsSX = 960;
     pantsPositionY = 0;
-  } else if (n === 7) {
-    pantsSX = 1152;
-    pantsPositionY = 0;
-  } else if (n === 8) {
-    pantsSX = 1536;
-    pantsPositionY = 0;
-  } else if (n === 9) {
-    pantsSX = 0;
-    pantsPositionY = 688;
-  } else if (n === 10) {
-    pantsSX = 192;
-    pantsPositionY = 688;
-  } else if (n === 11) {
-    pantsSX = 384;
-    pantsPositionY = 688;
-  } else if (n === 12) {
-    pantsSX = 576;
-    pantsPositionY = 688;
-  }
 
   pantsSY = pantsSYwithI(i) + pantsPositionY;
   pantsimg.onload = function() {
