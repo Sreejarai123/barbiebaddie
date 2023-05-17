@@ -111,20 +111,29 @@
       </div>
      <div class="content-item" id="hat-content">
         <table>
-          <tr>
-            <td><button onclick="hatbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Shirt000.png" alt="hat1"></button></td>
+             <tr>
+            <td><button onclick="hairbtn(1)"><img src="images/hair/hairL-Bla.png" alt="shoe1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hatbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Shirt222.png" alt="hat2"></button></td>          
+            <td><button onclick="hairbtn(2)"><img src="images/hair/hairL-Blo.png" alt="shoe2"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hatbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/46/Shirt223.png" alt="hat4"></button></td>        
+            <td><button onclick="hairbtn(3)"><img src="images/hair/hairL-Bro.png" alt="shoe3"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hatbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Shirt224.png" alt="hat5"></button></td>           
+            <td><button onclick="hairbtn(4)"><img src="images/hair/hairL-G.png" alt="shoe4"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hatbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Shirt225.png" alt="hat6"></button></td>        
+            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-Bla.png" alt="shoe5"></button></td>
+          </tr>
+          <tr>
+            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-Blo.png" alt="shoe5"></button></td>
+          </tr>
+          <tr>
+            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-Bro.png" alt="shoe5"></button></td>
+          </tr>
+           <tr>
+            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-G.png" alt="shoe5"></button></td>
           </tr>
         </table>
       </div>
