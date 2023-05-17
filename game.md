@@ -115,16 +115,16 @@
             <td><button onclick="hatbtn(1)"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Shirt000.png" alt="전형적인 멜빵바지"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hatbtn(223)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Shirt222.png" alt="황금 테두리 셔츠"></button></td>          
+            <td><button onclick="hatbtn(2)"><img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Shirt222.png" alt="황금 테두리 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="hatbtn(224)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/46/Shirt223.png" alt="무지갯빛 셔츠"></button></td>        
+            <td><button onclick="hatbtn(3)"><img src="https://stardewvalleywiki.com/mediawiki/images/4/46/Shirt223.png" alt="무지갯빛 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="hatbtn(225)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Shirt224.png" alt="펜던트 셔츠"></button></td>           
+            <td><button onclick="hatbtn(4)"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Shirt224.png" alt="펜던트 셔츠"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="hatbtn(226)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Shirt225.png" alt="고온 셔츠"></button></td>        
+            <td><button onclick="hatbtn(5)"><img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Shirt225.png" alt="고온 셔츠"></button></td>        
           </tr>
         </table>
       </div>
