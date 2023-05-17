@@ -1592,4 +1592,3 @@ function darkskin() {
   pantscontext.drawImage(pantsimg, pantsSX, pantsSY, 16, 33, 77, 30 + pantsheight, 160, 95);
   }
 }
-}
