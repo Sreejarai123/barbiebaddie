@@ -73,7 +73,7 @@
       </div>
       <div class="menu-content">
         <button class="menu-btn" id="pants-btn" onclick="menu(3, 'orange', 'rgb(255, 233, 172)')">
-          <img src="pants.png" alt="pants">
+          <img src="https://raw.githubusercontent.com/sele906/StardewDressUp/main/pants.png" alt="pants">
         </button>
       </div>
       <div class="menu-content">
@@ -156,41 +156,41 @@
       <div class="content-item" id="pants-content">
         <table>
           <tr>
-            <td><button onclick="pantsbtn(1)"><img src="images/bottoms/bottom1.png" alt="pants1"></button></td>           
+            <td><button onclick="pantsbtn(0)"><img src="images/bottoms/bottom1.png" alt="pants1"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(2)"><img src="images/bottoms/bottom2.png" alt="pants2"></button></td>          
+            <td><button onclick="pantsbtn(1)"><img src="images/bottoms/bottom2.png" alt="pants2"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(3)"><img src="images/bottoms/bottom3.png" alt="pants3"></button></td>           
+            <td><button onclick="pantsbtn(2)"><img src="images/bottoms/bottom3.png" alt="pants3"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(4)"><img src="images/bottoms/bottom4.png" alt="pants4"></button></td>          
+            <td><button onclick="pantsbtn(3)"><img src="images/bottoms/bottom4.png" alt="pants4"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(5)"><img src="images/bottoms/bottom5.png" alt="pants5"></button></td>          
+            <td><button onclick="pantsbtn(4)"><img src="images/bottoms/bottom5.png" alt="pants5"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(6)"><img src="images/bottoms/bottom6.png" alt="pants6"></button></td>         
+            <td><button onclick="pantsbtn(5)"><img src="images/bottoms/bottom6.png" alt="pants6"></button></td>         
           </tr>
         </table>
       </div>
       <div class="content-item" id="shoes-content">
         <table>
           <tr>
-            <td><button onclick="shoesbtn(1)"><img src="images/shoes/shoe1.png" alt="shoe1"></button></td>
+            <td><button onclick="shoesbtn(0)"><img src="images/shoes/shoe1.png" alt="shoe1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(2)"><img src="images/shoes/shoe2.png" alt="shoe2"></button></td>
+            <td><button onclick="shoesbtn(1)"><img src="images/shoes/shoe2.png" alt="shoe2"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(3)"><img src="images/shoes/shoe3.png" alt="shoe3"></button></td>
+            <td><button onclick="shoesbtn(2)"><img src="images/shoes/shoe3.png" alt="shoe3"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(4)"><img src="images/shoes/shoe4.png" alt="shoe4"></button></td>
+            <td><button onclick="shoesbtn(3)"><img src="images/shoes/shoe4.png" alt="shoe4"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(5)"><img src="images/shoes/shoe5.png" alt="shoe5"></button></td>
+            <td><button onclick="shoesbtn(4)"><img src="images/shoes/shoe5.png" alt="shoe5"></button></td>
           </tr>
         </table>
       </div>

@@ -407,33 +407,31 @@ var shirtImages = [
   "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top4.png",
 ];
 
-var currentImage = new Image();
-var currentShirtIndex = -1; // Track the current shirt index
-var isShirtVisible = false; // Flag to track shirt visibility
+var shirtImage = new Image();
+var shirtIndex = -1; // Track the current shirt index
+var shirtVisible = false; // Flag to track shirt visibility
 
 function shirtbtn(index) {
-  if (index === currentShirtIndex) {
+  if (index === shirtIndex) {
     // Same button clicked again
-    if (isShirtVisible) {
+    if (shirtVisible) {
       shirtcontext.clearRect(0, 0, shirtcanvas.width, shirtcanvas.height);
-      isShirtVisible = false;
+      shirtVisible = false;
     } else {
-      shirtcontext.drawImage(currentImage, 0, 0, shirtcanvas.width, shirtcanvas.height);
-      isShirtVisible = true;
+      shirtcontext.drawImage(shirtImage, 0, 0, shirtcanvas.width, shirtcanvas.height);
+      shirtVisible = true;
     }
   } else {
     // Different button clicked, update the current index and display the shirt
-    currentShirtIndex = index;
-    currentImage.onload = function() {
+    shirtIndex = index;
+    shirtImage.onload = function() {
       shirtcontext.clearRect(0, 0, shirtcanvas.width, shirtcanvas.height);
-      shirtcontext.drawImage(currentImage, 0, 0, shirtcanvas.width, shirtcanvas.height);
-      isShirtVisible = true;
+      shirtcontext.drawImage(shirtImage, 0, 0, shirtcanvas.width, shirtcanvas.height);
+      shirtVisible = true;
     };
-    currentImage.src = shirtImages[index];
+    shirtImage.src = shirtImages[index];
   }
 }
-
-
 
 /* function shirtbtn(n, shirtIndex) {
   shirtnumrepeat++;
@@ -477,82 +475,41 @@ function shirtbasedraw(n, shirtIndex) {
   }
 } */
 
-//바지 버튼 클릭시
+//bottoms
 
-var pantsnum = [];
-var pantsnumrepeat = 0;
-var pantscanvas = document.getElementById('pants')
+var pantscanvas = document.getElementById('pants');
 var pantscontext = pantscanvas.getContext('2d');
-var pantsimg = new Image();
-pantsimg.crossOrigin="anonymous";
+var pantsImages = [
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/bottoms/bottom1.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/bottoms/bottom2.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/bottoms/bottom3.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/bottoms/bottom4.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/bottoms/bottom5.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/bottoms/bottom6.png',
+];
+var pantsImage = new Image();
+var pantsIndex = -1; // Track the current shirt index
+var pantsVisible = false; // Flag to track shirt visibility
 
-function pantsSYwithI(n) {
-  return (-61/6 * n * n * n) + (30 * n * n) + (73/6 * n);
-}
-
-var pantsSX = 0;
-var pantsSY = 0;
-var pantsPositionY = 0;
-var pantsheight = 0;
-
-function pantsbtn(n) {
-
-  pantsnumrepeat++;
-  pantsnum.push(n);
-  if (pantsnum.length > 10) {
-    pantsnum.splice(0, pantsnum.length - 10);
-  }
-
-  if (samebutton(pantsnum, pantsnumrepeat) === true) {
-    pantscontext.clearRect(0, 0, canvas.width, canvas.height);
+function pantsbtn(index) {
+  if (index === pantsIndex) {
+    // Same button clicked again
+    if (pantsVisible) {
+      pantscontext.clearRect(0, 0, pantscanvas.width, pantscanvas.height);
+      pantsVisible = false;
+    } else {
+      pantscontext.drawImage(pantsImage, 0, 0, pantscanvas.width, pantscanvas.height);
+      pantsVisible = true;
+    }
   } else {
-
-  pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-
-  if (n === 1) {
-    pantsSX = 0;
-    pantsPositionY = 0;
-  } else if (n === 2) {
-    pantsSX = 192;
-    pantsPositionY = 0;
-  } else if (n === 3) {
-    pantsSX = 384;
-    pantsPositionY = 0;
-  } else if (n === 4) {
-    pantsSX = 576;
-    pantsPositionY = 0;
-  }else if (n === 5) {
-    pantsSX = 768;
-    pantsPositionY = 0;
-  } else if (n === 6) {
-    pantsSX = 960;
-    pantsPositionY = 0;
-  } else if (n === 7) {
-    pantsSX = 1152;
-    pantsPositionY = 0;
-  } else if (n === 8) {
-    pantsSX = 1536;
-    pantsPositionY = 0;
-  } else if (n === 9) {
-    pantsSX = 0;
-    pantsPositionY = 688;
-  } else if (n === 10) {
-    pantsSX = 192;
-    pantsPositionY = 688;
-  } else if (n === 11) {
-    pantsSX = 384;
-    pantsPositionY = 688;
-  } else if (n === 12) {
-    pantsSX = 576;
-    pantsPositionY = 688;
-  }
-
-  pantsSY = pantsSYwithI(i) + pantsPositionY;
-  pantsimg.onload = function() {
-    pantscontext.drawImage(pantsimg, pantsSX, pantsSY, 16, 33, 77, 30 + pantsheight, 160, 95);    
-  }
-
-  pantsimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/pants/pants.png';
+    // Different button clicked, update the current index and display the shirt
+    pantsIndex = index;
+    pantsImage.onload = function() {
+      pantscontext.clearRect(0, 0, pantscanvas.width, pantscanvas.height);
+      pantscontext.drawImage(pantsImage, 0, 0, pantscanvas.width, pantscanvas.height);
+      pantsVisible = true;
+    };
+    pantsImage.src = pantsImages[index];
   }
 }
 
@@ -581,167 +538,40 @@ baseimg.onload = function() {
 //신발 버튼 클릭시
 //이미지 데이터로 저장
 
-var shoenum = [];
-var shoenumrepeat = 0;
 var shoescanvas = document.getElementById('shoes');
 var shoescontext = shoescanvas.getContext('2d');
+var shoesImages = [
+'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/shoes/shoe1.png',
+'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/shoes/shoe2.png',
+'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/shoes/shoe3.png',
+'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/shoes/shoe4.png',
+'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/shoes/shoe5.png',
+'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/shoes/shoe6.png',
+];
+var shoesImage = new Image();
+var shoesIndex = -1; // Track the current shoe index
+var shoesVisible = false; // Flag to track shoe visibility
 
-var leftfoot1 = context.getImageData(0, 0, canvas.width, canvas.height);
-var leftfoot2 = context.getImageData(0, 0, canvas.width, canvas.height);
-var leftfoot3 = context.getImageData(0, 0, canvas.width, canvas.height);
-
-var rightfoot1 = context.getImageData(0, 0, canvas.width, canvas.height);
-var rightfoot2 = context.getImageData(0, 0, canvas.width, canvas.height);
-var rightfoot3 = context.getImageData(0, 0, canvas.width, canvas.height);
-
-var shoebtnnum = 0;
-var shoecolorlist = [];
-
-function shoesbtn(n) {
-
-  shoenumrepeat++;
-  shoenum.push(n);
-  if (shoenum.length > 10) {
-    shoenum.splice(0, shoenum.length - 10);
-  }
-
-  if (samebutton(shoenum, shoenumrepeat) === true) {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-  } else {
-  
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-  FootColor(n);
-  LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
-  RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
-  
-  shoebtnnum = n;
-  
-  if (i === 0) {  
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-    LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
-    RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
-  } else if (i === 1) {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-    LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
-    RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
-  } else if (i === 2) {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-    LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
-    RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
-  } else if (i === 3) {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-    LeftFootPosition(144, 116, 25, 3, 137, 118, 29, 3, 133, 121, 28, 2);
-    RightFootPosition(116, 115, 18, 2, 108, 116, 24, 2, 104, 117, 26, 2);
-  }
-  }
+function shoesbtn(index) {
+if (index === shoesIndex) {
+// Same button clicked again
+if (shoesVisible) {
+shoescontext.clearRect(0, 0, shoescanvas.width, shoescanvas.height);
+shoesVisible = false;
+} else {
+shoescontext.drawImage(shoesImage, 0, 0, shoescanvas.width, shoescanvas.height);
+shoesVisible = true;
 }
-
-function FootColor(n) {
-
-  if (n === 1) {
-    shoecolorlist = [187, 0, 0];
-  } else if (n === 2) {
-    shoecolorlist = [0, 128, 0];
-  } else if (n === 3) {
-    shoecolorlist = [119, 41, 26];
-  } else if (n === 4) {
-    shoecolorlist = [141, 114, 3];
-  } else if (n === 5) {
-    shoecolorlist = [127, 127, 127];
-  } else if (n === 6) {
-    shoecolorlist = [175, 123, 99];
-  } else if (n === 7) {
-    shoecolorlist = [92, 119, 13];
-  } else if (n === 8) {
-    shoecolorlist = [0, 101, 145];
-  } else if (n === 9) {
-    shoecolorlist = [155, 66, 6];
-  } else if (n === 10) {
-    shoecolorlist = [0, 0, 0];
-  } else if (n === 11) {
-    shoecolorlist = [138, 34, 19];
-  } else if (n === 12) {
-    shoecolorlist = [116, 50, 106];
-  } else if (n === 13) {
-    shoecolorlist = [89, 37, 97];
-  } else if (n === 14) {
-    shoecolorlist = [2, 129, 183];
-  } else if (n === 15) {
-    shoecolorlist = [176, 0, 4];
-  } else if (n === 16) {
-    shoecolorlist = [43, 82, 174];
-  } else if (n === 17) {
-    shoecolorlist = [63, 35, 99];
-  } else if (n === 18) {
-    shoecolorlist = [146, 199, 235];
-  } 
-
-  FootColoring(shoecolorlist);
+} else {
+// Different button clicked, update the current index and display the shoe
+shoesIndex = index;
+shoesImage.onload = function() {
+shoescontext.clearRect(0, 0, shoescanvas.width, shoescanvas.height);
+shoescontext.drawImage(shoesImage, 0, 0, shoescanvas.width, shoescanvas.height);
+shoesVisible = true;
+};
+shoesImage.src = shoesImages[index];
 }
-
-function FootColoring(shoecolorlist) {
-
-  //왼발
-  for (let i = 0; i < leftfoot1.data.length; i += 4) {
-    leftfoot1.data[i + 0] = shoecolorlist[0];
-    leftfoot1.data[i + 1] = shoecolorlist[1];
-    leftfoot1.data[i + 2] = shoecolorlist[2];
-    leftfoot1.data[i + 3] = 255;
-  }
-
-  for (let i = 0; i < leftfoot2.data.length; i += 4) {
-    leftfoot2.data[i + 0] = shoecolorlist[0];
-    leftfoot2.data[i + 1] = shoecolorlist[1];
-    leftfoot2.data[i + 2] = shoecolorlist[2];
-    leftfoot2.data[i + 3] = 255;
-  }
-
-  for (let i = 0; i < leftfoot3.data.length; i += 4) {
-    leftfoot3.data[i + 0] = shoecolorlist[0];
-    leftfoot3.data[i + 1] = shoecolorlist[1];
-    leftfoot3.data[i + 2] = shoecolorlist[2];
-    leftfoot3.data[i + 3] = 255;
-  }
-
-  //오른발
-  for (let i = 0; i < rightfoot1.data.length; i += 4) {
-    rightfoot1.data[i + 0] = shoecolorlist[0];
-    rightfoot1.data[i + 1] = shoecolorlist[1];
-    rightfoot1.data[i + 2] = shoecolorlist[2];
-    rightfoot1.data[i + 3] = 255;
-  }
-
-  for (let i = 0; i < rightfoot2.data.length; i += 4) {
-    rightfoot2.data[i + 0] = shoecolorlist[0];
-    rightfoot2.data[i + 1] = shoecolorlist[1];
-    rightfoot2.data[i + 2] = shoecolorlist[2];
-    rightfoot2.data[i + 3] = 255;
-  }
-
-  for (let i = 0; i < rightfoot3.data.length; i += 4) {
-    rightfoot3.data[i + 0] = shoecolorlist[0];
-    rightfoot3.data[i + 1] = shoecolorlist[1];
-    rightfoot3.data[i + 2] = shoecolorlist[2];
-    rightfoot3.data[i + 3] = 255;
-  }
-}
-
-function LeftFootPosition(dx1, dy1, dw1, dh1, dx2, dy2, dw2, dh2, dx3, dy3, dw3, dh3) {
-  context.putImageData(leftfoot1, 0, 0, dx1, dy1, dw1, dh1);
-  context.putImageData(leftfoot2, 0, 0, dx2, dy2, dw2, dh2);
-  context.putImageData(leftfoot3, 0, 0, dx3, dy3, dw3, dh3);
-}
-
-function RightFootPosition(dx1, dy1, dw1, dh1, dx2, dy2, dw2, dh2, dx3, dy3, dw3, dh3) {
-  context.putImageData(rightfoot1, 0, 0, dx1, dy1, dw1, dh1);
-  context.putImageData(rightfoot2, 0, 0, dx2, dy2, dw2, dh2);
-  context.putImageData(rightfoot3, 0, 0, dx3, dy3, dw3, dh3);
 }
 
 //화살표 작동
@@ -755,142 +585,18 @@ function medskin() {
   
   context.clearRect(0, 0, canvas.width, canvas.height);
   baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base1.png';
-  baseArmimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base1.png';
   baseimg.onload = function() {
-    if (samebutton(shoenum, shoenumrepeat)) {
-      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-      context.drawImage(baseArmimg, 0, 0, canvas.width, canvas.height);
-    }
-  }
-  
-  hairheight = 0;
-
-  if (hairundo) {
-    haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  haircontext.drawImage(hairimg, hairSX, hairSY, 16, 33, 74, 37 + hairheight, 170, 90); 
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
   }
 
-  accessoryheight = 0;
-
-  if (accessoryundo === true) {
-    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  accessorycontext.drawImage(accessoryimg, accessorySX, accessorySY, 17, 20, 62, 35 + accessoryheight, 200, 65); 
-  if (i === 2) {
-    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  }
-  }
-  
-  hatheight = 0;
-
-  if (samebutton(hatnum, hatnumrepeat)) {
-    hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-  hatcontext.drawImage(hatimg, hatSX, hatSY, 20, 20, 60, 24 + hatheight, 190, 60);
-  }
-
-  shirtheight = 0
-
-  if (samebutton(shirtnum, shirtnumrepeat) && samebutton(shirtbasenum, shirtbasenumrepeat)) {
-    shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-  shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
-  shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-  shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);
-  }
-
-  pantsheight = 0;
-
-  if (samebutton(pantsnum, pantsnumrepeat)) {
-    pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-  pantscontext.drawImage(pantsimg, pantsSX, pantsSY, 16, 33, 77, 30 + pantsheight, 160, 95);
-  }
 }
 
 function lightskin() {
   
   context.clearRect(0, 0, canvas.width, canvas.height);
   baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base2.png';
-
   baseimg.onload = function() {
-    if (samebutton(shoenum, shoenumrepeat)) {
-      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-    } else {
-      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-      FootColor(shoebtnnum);
-      if (i === 0) {  
-        LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
-        RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
-      } else if (i === 1) {
-        LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
-        RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
-      } else if (i === 2) {
-        LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
-        RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
-      } else if (i === 3) {
-        LeftFootPosition(144, 116, 25, 3, 137, 118, 29, 3, 133, 121, 28, 2);
-        RightFootPosition(116, 115, 18, 2, 108, 116, 24, 2, 104, 117, 26, 2);
-      }
-    }
-  }
-
-  hairheight = 1;
-
-  if (hairundo) {
-    haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  haircontext.drawImage(hairimg, hairSX, hairSY, 16, 33, 74, 37 + hairheight, 170, 90); 
-  }
-
-  accessoryheight = 3;
-
-  if (accessoryundo === true) {
-    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  accessorycontext.drawImage(accessoryimg, accessorySX, accessorySY, 17, 20, 62, 35 + accessoryheight, 200, 65); 
-  if (i === 2) {
-    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  }
-  }
-  
-  hatheight = 1;
-
-  if (samebutton(hatnum, hatnumrepeat)) {
-    hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-  hatcontext.drawImage(hatimg, hatSX, hatSY, 20, 20, 60, 24 + hatheight, 190, 60);
-  }
-
-  shirtheight = 2;
-
-  if (samebutton(shirtnum, shirtnumrepeat) && samebutton(shirtbasenum, shirtbasenumrepeat)) {
-    shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-  shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20); 
-  shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-  shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);  
-  }
-
-  pantsheight = 3;
-
-  if (samebutton(pantsnum, pantsnumrepeat)) {
-    pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-  pantscontext.drawImage(pantsimg, pantsSX, pantsSY, 16, 33, 77, 30 + pantsheight, 160, 95);
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
   }
 }
 
@@ -898,77 +604,8 @@ function darkskin() {
   
   context.clearRect(0, 0, canvas.width, canvas.height);
   baseimg.src='https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/base/base3.png';
-
   baseimg.onload = function() {
-    if (samebutton(shoenum, shoenumrepeat)) {
-      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-    } else {
-      context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
-      FootColor(shoebtnnum);
-      if (i === 0) {  
-        LeftFootPosition(127, 113, 22, 7, 115, 117, 30, 4, 119, 121, 22, 2);
-        RightFootPosition(164, 113, 22, 7, 167, 118, 30, 4, 169, 121, 22, 2);
-      } else if (i === 1) {
-        LeftFootPosition(127, 116, 30, 3, 126, 119, 38, 2, 135, 120, 26, 2);
-        RightFootPosition(164, 114, 18, 2, 165, 115, 20, 2, 170, 117, 20, 2); 
-      } else if (i === 2) {
-        LeftFootPosition(122, 116, 27, 3, 127, 117, 15, 4, 130, 121, 7, 2);
-        RightFootPosition(163, 116, 27, 3, 168, 117, 15, 4, 171, 121, 7, 2);
-      } else if (i === 3) {
-        LeftFootPosition(144, 116, 25, 3, 137, 118, 29, 3, 133, 121, 28, 2);
-        RightFootPosition(116, 115, 18, 2, 108, 116, 24, 2, 104, 117, 26, 2);
-      }
-    }
+    context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
   }
 
-  hairheight = 1;
-
-  if (hairundo) {
-    haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  haircontext.drawImage(hairimg, hairSX, hairSY, 16, 33, 74, 37 + hairheight, 170, 90); 
-  }
-
-  accessoryheight = 3;
-
-  if (accessoryundo === true) {
-    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  accessorycontext.drawImage(accessoryimg, accessorySX, accessorySY, 17, 20, 62, 35 + accessoryheight, 200, 65); 
-  if (i === 2) {
-    accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
-  }
-  }
-  
-  hatheight = 1;
-
-  if (samebutton(hatnum, hatnumrepeat)) {
-    hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-  hatcontext.drawImage(hatimg, hatSX, hatSY, 20, 20, 60, 24 + hatheight, 190, 60);
-  }
-
-  shirtheight = 2;
-
-  if (samebutton(shirtnum, shirtnumrepeat) && samebutton(shirtbasenum, shirtbasenumrepeat)) {
-    shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-    shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  shirtcontext.clearRect(0, 0, canvas.width, canvas.height);
-  shirtcontext.drawImage(shirtimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20); 
-  shirtbasecontext.clearRect(0, 0, canvas.width, canvas.height);
-  shirtbasecontext.drawImage(shirtbaseimg, shirtSX, shirtSY, 8, 8, 120, 76 + shirtheight, 70, 20);  
-  }
-
-  pantsheight = 3;
-
-  if (samebutton(pantsnum, pantsnumrepeat)) {
-    pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-  } else {
-  pantscontext.clearRect(0, 0, canvas.width, canvas.height);
-  pantscontext.drawImage(pantsimg, pantsSX, pantsSY, 16, 33, 77, 30 + pantsheight, 160, 95);
-  }
 }
