@@ -15,36 +15,23 @@
         align-items: center;
         justify-content: center;
       }
-      @keyframes blink {
-        0% { opacity: 1; }
-        50% { opacity: 0; }
-        100% { opacity: 1; }
-      }
-      .blinking-text {
-        animation: blink 1s infinite;
-      }
     </style>
   </head>
-  <body onclick="window.location.href='{{ site.baseurl }}/logo'">
-    <div class="center">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-      <label class="blinking-text" href="{{ site.baseurl }}/logo">( CLICK ANYWHERE TO CONTINUE )</label>
+  <body>
+    <div class="center" id="overlay">
+      <h1>Code Couture</h1>
+      <label>Get ready to dress to impress, break the fashion barriers, and let your inner geek shine in Code Couture – the ultimate fusion of computer science and haute couture. It's time to redefine fashion, one line of code at a time!</label>
+      <a class="nes-btn is-primary" href="{{ site.baseurl }}/story" id="myButton">PLAY NOW</a>
       <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
     </div>
     <script>
 var hoverSound = document.getElementById("hoverSound");
 var myButton = document.getElementById("myButton");
-var delayTime = 5000;
-    setTimeout(navigateToNextPage, delayTime);
-        function navigateToNextPage() {
-      window.location.href = "{{ site.baseurl }}/start";
-    }
+function playHoverSound() {
+  hoverSound.currentTime = 0; // Reset the playback position to the beginning
+  hoverSound.play();
+}
+myButton.addEventListener("mouseenter", playHoverSound);
     </script>
   </body>
 </html>
