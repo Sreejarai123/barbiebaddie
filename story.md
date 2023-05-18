@@ -78,5 +78,4 @@ function playHoverSound() {
 }
 myButton.addEventListener("mouseenter", playHoverSound);
     </script>
-  </body>
-</html>
+
