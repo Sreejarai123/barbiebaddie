@@ -59,7 +59,7 @@
           <div class="hide">
           </div>
           <div class="nes-balloon from-right">
-            <p class="typing2">damn</p>
+            <p class="typing2">dang</p>
           </div>
           <i class="nes-bcrikko"></i>
         </section>
@@ -67,7 +67,11 @@
     </section>
     </div>
     <div class="center">
-    <a class="nes-btn is-primary" href="{{ site.baseurl }}/game">Continue to game &gt;</a>
-    </div>
+    <a class="nes-btn is-primary" href="{{ site.baseurl }}/game" onload="startGame()">Continue to game &gt;</a>
+    <script>
+function startGame() {
+    mySound = new sound("bounce.mp3");
+}
+    </script>
   </body>
 </html>

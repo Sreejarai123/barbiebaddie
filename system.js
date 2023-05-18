@@ -1,12 +1,13 @@
-//탭 메뉴
+function startGame() {
+  myGamePiece = new component(30, 30, "red", 10, 120);
+  mySound = new sound("bounce.mp3");
+  myMusic = new sound("gametheme.mp3");
+  myMusic.play();
+  myGameArea.start();
+}
 
 var menuButtons = document.getElementsByClassName('menu-content');
 var contentItem = document.getElementsByClassName('content-item');
-
-//getElementsByClassName 은 정보를 arrey 로 저장함!
-//클래스 이름은 말그대로 클래스 이름 -> '.???' 이런식으로 점이 들어가면 안됨
-//아이디와 클래스는 다름! 아이디는 각각, 클래스는 전체적으로 작동 
-//ex. 아이디에 display:none을 하고 똑같은 태그에 클래스로 display:block을 했다면 아이디 먼저 작동 -> 동시 작동x
 
 function menu(index, Mcolorcode, Ccolorcode) {
   Array.from(menuButtons).forEach((x) => {
