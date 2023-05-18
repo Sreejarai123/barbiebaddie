@@ -67,11 +67,16 @@
     </section>
     </div>
     <div class="center">
-    <a class="nes-btn is-primary" href="{{ site.baseurl }}/game" onload="startGame()">Continue to game &gt;</a>
+    <a class="nes-btn is-primary" href="{{ site.baseurl }}/game" onload="startGame()" id="myButton">Continue &gt;</a>
+    <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
     <script>
-function startGame() {
-    mySound = new sound("bounce.mp3");
+var hoverSound = document.getElementById("hoverSound");
+var myButton = document.getElementById("myButton");
+function playHoverSound() {
+  hoverSound.currentTime = 0; // Reset the playback position to the beginning
+  hoverSound.play();
 }
+myButton.addEventListener("mouseenter", playHoverSound);
     </script>
   </body>
 </html>
