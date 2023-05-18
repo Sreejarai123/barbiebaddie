@@ -39,10 +39,9 @@
   #canvas {
     margin: 20% 0 0 0;
     position: relative;
-    border: 2px solid rgb(63, 61, 50);
     width: 150px; 
     height: 444.88px;
-    background-color: white;
+    background-color: none;
   }
   
   #base {

@@ -86,7 +86,7 @@
       <div class="content-item" id="body-content">
         <div id="bodyinf">
           <div class="bodyinfwrap" id="bodyinf-Up">
-            <h2 class="bodyinfheader">머리</h2>
+            <h2 class="bodyinfheader">Hair</h2>
             <div id="hairbox">
               <div class="body-arrow" id="L-arrow">
                 <i class="fa fa-solid fa-angle-left fa-3x" id="hairbtn-L" onclick="hairbtnL()"></i>
@@ -98,7 +98,7 @@
               </div>
             </div>
             <div id="hair-setting">
-              <div><button id="hairundo" onclick="hairundobtn()">취소하기</button></div>
+              <div><button id="hairundo" onclick="hairundobtn()">Remove</button></div>
             </div>
           </div>
           <div class="bodyinfwrap" id="bodyinf-Down">

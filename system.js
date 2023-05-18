@@ -135,150 +135,63 @@ function accessoryundobtn() {
 
 //머리 버튼 클릭시 
 
-var hairSX = 0;
-var hairSY = 0;
-var hairPositionY = 0;
-var hairheight = 0;
-
 var haircanvas = document.getElementById('hair');
 var haircontext = haircanvas.getContext('2d');
 
-var hairDcanvas = document.getElementById('hairDcanvas');
-var hairDcontext = hairDcanvas.getContext('2d');
+var hairImages = [
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-Bla.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-Blo.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-Bro.png',
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-G.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-Bla.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-Blo.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-Bro.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-G.png",
+  ];
 
-var hairimg = new Image();
-hairimg.crossOrigin="anonymous";
-
-function hairSYwithI1(n) {
-  return (-10 * n * n * n) + (29 * n * n) + (14 * n); 
-}
-
-j = 0;
-var hairstylenum = 0;
+var hairImage = new Image();
+var hairIndex = -1; // Track the current hair index
+var hairVisible = false; // Flag to track hair visibility
 
 function hairbtnL() {
-  j--;
-  if (j < 1) {
-    j = 79;
+  hairIndex--;
+  if (hairIndex < 0) {
+    hairIndex = hairImages.length - 1;
   }
-  hairstylenum = j;
-
-  hairbtn();
+  hairbtn(hairIndex);
 }
 
 function hairbtnR() {
-  j++;
-  if (j > 79) {
-    j = 1;
+  hairIndex++;
+  if (hairIndex >= hairImages.length) {
+    hairIndex = 0;
   }
-  hairstylenum = j;
-
-  hairbtn();
+  hairbtn(hairIndex);
 }
 
-function hairbtn() {
-
+function hairbtn(index) {
   if (hairundo === true) {
-  document.querySelector('#hairundo').innerHTML = '취소하기'
-  hairundo = false;
+    document.querySelector('#hairundo').innerHTML = 'remove';
+    hairundo = false;
   }
-  
-  document.getElementById("hairDcanvas").style.background = 'none';
-  haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  hairDcontext.clearRect(0, 0, canvas.width, canvas.height);
-
-  if (hairstylenum < 56) {
-
-    if (hairstylenum % 8 === 1) {
-      hairSX = 0 * 16;
-    } else if (hairstylenum % 8 === 2) {
-      hairSX = 1 * 16;
-    } else if (hairstylenum % 8 === 3) {
-      hairSX = 2 * 16;
-    } else if (hairstylenum % 8 === 4) {
-      hairSX = 3 * 16;
-    } else if (hairstylenum % 8 === 5) {
-      hairSX = 4 * 16;
-    } else if (hairstylenum % 8 === 6) {
-      hairSX = 5 * 16;
-    } else if (hairstylenum % 8 === 7) {
-      hairSX = 6 * 16;
-    } else if (hairstylenum % 8 === 0) {
-      hairSX = 7 * 16;
+  if (index === hairIndex) {
+    // Same button clicked again
+    if (hairVisible) {
+      haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
+      hairVisible = false;
+    } else {
+      haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
+      hairVisible = true;
     }
-
-    if (hairstylenum / 8 <= 1) {
-      hairPositionY = 0 * 96;
-    } else if (hairstylenum / 8 <= 2) {
-      hairPositionY = 1 * 96;
-    } else if (hairstylenum / 8 <= 3) {
-      hairPositionY = 2 * 96;
-    } else if (hairstylenum / 8 <= 4) {
-      hairPositionY = 3 * 96;
-    } else if (hairstylenum / 8 <= 5) {
-      hairPositionY = 4 * 96;
-    } else if (hairstylenum / 8 <= 6) {
-      hairPositionY = 5 * 96;
-    } else if (hairstylenum / 8 <= 7) {
-      hairPositionY = 6 * 96;
-    }
-    
-    hairSY = hairSYwithI1(i) + hairPositionY;
-    hairimg.onload = function() {
-      haircontext.drawImage(hairimg, hairSX, hairSY, 16, 33, 74, 37 + hairheight, 170, 90);    
-      hairDcontext.drawImage(hairimg, hairSX, hairPositionY, 16, 33, 90, 10, 130, 170);   
-    }
-    hairimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/hair/hairstyles.png';
   } else {
-
-    if (hairstylenum % 8 === 1) {
-      hairSX = 0 * 16;
-    } else if (hairstylenum % 8 === 2) {
-      hairSX = 1 * 16;
-    } else if (hairstylenum % 8 === 3) {
-      hairSX = 2 * 16;
-    } else if (hairstylenum % 8 === 4) {
-      hairSX = 3 * 16;
-    } else if (hairstylenum % 8 === 5) {
-      hairSX = 4 * 16;
-    } else if (hairstylenum % 8 === 6) {
-      hairSX = 5 * 16;
-    } else if (hairstylenum % 8 === 7) {
-      hairSX = 6 * 16;
-    } else if (hairstylenum % 8 === 0) {
-      hairSX = 7 * 16;
-    }
-
-    if (hairstylenum / 8 <= 1) {
-      hairPositionY = 0 * 128;
-    } else if (hairstylenum / 8 <= 2) {
-      hairPositionY = 1 * 128;
-    } else if (hairstylenum / 8 <= 3) {
-      hairPositionY = 2 * 128;
-    } else if (hairstylenum / 8 <= 4) {
-      hairPositionY = 3 * 128;
-    } else if (hairstylenum / 8 <= 5) {
-      hairPositionY = 4 * 128;
-    } else if (hairstylenum / 8 <= 6) {
-      hairPositionY = 5 * 128;
-    }
-
-    if (i === 0) {
-      hairSY = 0 + hairPositionY;
-    } else if (i === 1) {
-      hairSY = 32 + hairPositionY;
-    } else if (i === 2) {
-      hairSY = 64 + hairPositionY;
-    } else if (i === 3) {
-      hairSY = 98 + hairPositionY;
-    }
-
-    hairimg.onload = function() {
-      haircontext.drawImage(hairimg, hairSX, hairSY, 16, 32, 70, 35 + hairheight, 170, 85);    
-      hairDcontext.drawImage(hairimg, hairSX, hairPositionY, 16, 32, 90, 10, 130, 170);   
-    }
-
-    hairimg.src = 'https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/hair/hairstyles2.png';
+    // Different button clicked, update the current index and display the hair
+    hairIndex = index;
+    hairImage.onload = function() {
+      haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
+      haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
+      hairVisible = true;
+    };
+    hairImage.src = hairImages[index];
   }
 }
 
@@ -288,11 +201,11 @@ function hairundobtn() {
   if (hairundo === false) {
   haircontext.clearRect(0, 0, canvas.width, canvas.height);
   hairundo = true;
-  document.querySelector('#hairundo').innerHTML = '적용하기';
+  document.querySelector('#hairundo').innerHTML = 'remove';
   } else if (hairundo === true) {
-    haircontext.drawImage(hairimg, hairSX, hairSY, 16, 32, 70, 35 + hairheight, 170, 85);
+    haircontext.drawImage(0, 0, canvas.width, canvas.height);
     hairundo = false;
-    document.querySelector('#hairundo').innerHTML = '취소하기';
+    document.querySelector('#hairundo').innerHTML = 'remove';
   }
 }
 
