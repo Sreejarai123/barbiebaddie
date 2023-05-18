@@ -24,9 +24,6 @@ function menu(index, Mcolorcode, Ccolorcode) {
 
 menu(0, 'orange', 'rgb(255, 233, 172)');
 
-//내용
-
-//악세사리 버튼 클릭시
 var accessorySX = 0;
 var accessorySY = 0;
 var accessoryPositionY = 0;
@@ -125,11 +122,11 @@ function accessoryundobtn() {
   if (accessoryundo === false) {
   accessorycontext.clearRect(0, 0, canvas.width, canvas.height);
   accessoryundo = true;
-  document.querySelector('#accessoryundo').innerHTML = '적용하기';
+  document.querySelector('#accessoryundo').innerHTML = '--';
   } else if (accessoryundo === true) {
     accessorycontext.drawImage(accessoryimg, accessorySX, accessorySY + accessoryPositionY, 17, 20, 62, 35 + accessoryheight, 200, 65); 
     accessoryundo = false;
-    document.querySelector('#accessoryundo').innerHTML = '취소하기';
+    document.querySelector('#accessoryundo').innerHTML = '--';
   }
 }
 
@@ -427,13 +424,6 @@ function pantsbtn(index) {
   }
 }
 
-//캔버스 
-
-//캔버스에 사진 붙일 때는 onload를 이용 -> 배열이용, 애니메이션 이용(프레임마다 캔버스 지워짐)일때는 다른 방법 사용
-//함수(onload)보다 onload(이미지 함수) 사용하면 여러 이미지 등록 가능
-//파일명 입력할때 파일 포함하는 파일명까지 써줘야 함
-
-//밑그림
 
 var canvas = document.getElementById('base');
 var context = canvas.getContext('2d');
@@ -449,8 +439,6 @@ baseimg.onload = function() {
   context.drawImage(baseimg, 0, 0, canvas.width, canvas.height);
 }
 
-//신발 버튼 클릭시
-//이미지 데이터로 저장
 
 var shoescanvas = document.getElementById('shoes');
 var shoescontext = shoescanvas.getContext('2d');
@@ -488,12 +476,12 @@ shoesImage.src = shoesImages[index];
 }
 }
 
-//화살표 작동
+
 
 var i = 0;
 var backheight = 0;
 
-//성별 클릭했을 때
+
 
 function medskin() {
   

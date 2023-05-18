@@ -91,7 +91,6 @@
             <div id="hairbox">
               <div class="body-arrow" id="L-arrow">
                 <i class="fa fa-solid fa-angle-left fa-3x" id="hairbtn-L" onclick="hairbtnL()"></i>
-                <!--만약 폰트어썸 작동 안되면 앞에 'fa' 한번 더 붙여보기!-->
               </div>
               <canvas id="hairDcanvas"></canvas>
               <div class="body-arrow" id="R-arrow">
