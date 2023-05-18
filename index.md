@@ -35,16 +35,12 @@
     <br>
     <br>
       <label class="blinking-text" href="{{ site.baseurl }}/logo">( CLICK ANYWHERE TO CONTINUE )</label>
-      <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
+      <audio id="btnSound" src="audio/sfx/start.mp3"></audio>
     </div>
     <script>
-var hoverSound = document.getElementById("hoverSound");
-var myButton = document.getElementById("myButton");
-var delayTime = 5000;
-    setTimeout(navigateToNextPage, delayTime);
-        function navigateToNextPage() {
-      window.location.href = "{{ site.baseurl }}/start";
-    }
+      var btnSound = document.getElementById("btnSound");
+            btnSound.play();
+      }
     </script>
   </body>
 </html>
