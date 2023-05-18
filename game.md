@@ -102,7 +102,7 @@
             </div>
           </div>
           <div class="bodyinfwrap" id="bodyinf-Down">
-            <h2 class="bodyinfheader">악세사리</h2>
+            <h2 class="bodyinfheader"></h2>
             <div id="accessorybox">
               <canvas id="accessoryDcanvas"></canvas>
             </div>
