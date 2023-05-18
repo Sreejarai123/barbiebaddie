@@ -42,7 +42,7 @@
       <canvas id="blank"></canvas>
       <img id="results">
     </div>
-    <audio id="music" src="audio/gametheme.mp3" autoplay></audio>
+    <audio id="music" src="audio/gametheme.mp3" autoplay loop></audio>
     <div id="sex">
       <button id="man-btn" onclick="medskin()">
         <span class="medskin-icon"></span>
