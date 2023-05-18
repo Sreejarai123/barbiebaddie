@@ -396,22 +396,9 @@ function hatbtn(n) {
   }
 }
 
-//셔츠 버튼 클릭시
-
-var shirtbasenum = [];
-var shirtbasenumrepeat = 0;
-var shirtbasecanvas = document.getElementById('shirtbase');
-var shirtbasecontext = shirtbasecanvas.getContext('2d');
-var shirtbaseimg = new Image();
-shirtbaseimg.crossOrigin="anonymous";
-
-var shirtheight = 0;
-var shirtnum = [];
-var shirtnumrepeat = 0;
 var shirtcanvas = document.getElementById('shirt');
 var shirtcontext = shirtcanvas.getContext('2d');
-var shirtimg = new Image();
-shirtimg.crossOrigin="anonymous";
+
 
 var shirtImages = [
   'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top1.png',
@@ -420,16 +407,35 @@ var shirtImages = [
   "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/tops/top4.png",
 ];
 
-function shirtSYwithI(n) {
-  return (-16/3 * n * n * n) + (20 * n * n) + (-20/3 * n);
+var currentImage = new Image();
+var currentShirtIndex = -1; // Track the current shirt index
+var isShirtVisible = false; // Flag to track shirt visibility
+
+function shirtbtn(index) {
+  if (index === currentShirtIndex) {
+    // Same button clicked again
+    if (isShirtVisible) {
+      shirtcontext.clearRect(0, 0, shirtcanvas.width, shirtcanvas.height);
+      isShirtVisible = false;
+    } else {
+      shirtcontext.drawImage(currentImage, 0, 0, shirtcanvas.width, shirtcanvas.height);
+      isShirtVisible = true;
+    }
+  } else {
+    // Different button clicked, update the current index and display the shirt
+    currentShirtIndex = index;
+    currentImage.onload = function() {
+      shirtcontext.clearRect(0, 0, shirtcanvas.width, shirtcanvas.height);
+      shirtcontext.drawImage(currentImage, 0, 0, shirtcanvas.width, shirtcanvas.height);
+      isShirtVisible = true;
+    };
+    currentImage.src = shirtImages[index];
+  }
 }
 
-var ShareShirt = 1;
-var shirtSX = 0;
-var shirtSY = 0;
 
 
-function shirtbtn(n, shirtIndex) {
+/* function shirtbtn(n, shirtIndex) {
   shirtnumrepeat++;
   shirtnum.push(n);
   if (shirtnum.length > 10) {
@@ -450,8 +456,7 @@ function shirtbtn(n, shirtIndex) {
 
     shirtbasedraw(n, shirtIndex);
   }
-}
-
+} 
 function shirtbasedraw(n, shirtIndex) {
   shirtbasenumrepeat++;
   shirtbasenum.push(n);
@@ -470,7 +475,8 @@ function shirtbasedraw(n, shirtIndex) {
 
     shirtbaseimg.src = shirtImages[shirtIndex];
   }
-}
+} */
+
 //바지 버튼 클릭시
 
 var pantsnum = [];
@@ -757,7 +763,6 @@ function medskin() {
     }
   }
   
-
   hairheight = 0;
 
   if (hairundo) {
