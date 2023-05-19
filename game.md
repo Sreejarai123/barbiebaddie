@@ -140,16 +140,16 @@
       <div class="content-item" id="shirt-content">
         <table>
           <tr>
-            <td><button onclick="shirtbtn(0)"><img src="images/zcropped/top1c.png" alt="전형적인 멜빵바지"></button></td>
+            <td><button onclick="shirtbtn(0)"><img src="images/zcropped/top1c.png" alt="shirt1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(1)"><img src="images/zcropped/top2c.png" alt="황금 테두리 셔츠"></button></td>          
+            <td><button onclick="shirtbtn(1)"><img src="images/zcropped/top2c.png" alt="shirt2"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(2)"><img src="images/zcropped/top3c.png" alt="무지갯빛 셔츠"></button></td>        
+            <td><button onclick="shirtbtn(2)"><img src="images/zcropped/top3c.png" alt="shirt3"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(3)"><img src="images/zcropped/top4c.png" alt="펜던트 셔츠"></button></td>           
+            <td><button onclick="shirtbtn(3)"><img src="images/zcropped/top4c.png" alt="shirt4"></button></td>           
           </tr>
         </table>
       </div>
