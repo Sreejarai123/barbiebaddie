@@ -23,6 +23,15 @@
       .blinking-text {
         animation: blink 1s infinite;
       }
+      body {
+      padding: 150px;
+      background-color: black;
+      color: white;
+      }
+      #preloader{
+        background-color: #fff;
+        background-size: cover;
+      }
     </style>
   </head>
   <body onclick="window.location.href='{{ site.baseurl }}/logo'">
@@ -41,6 +50,11 @@
       var btnSound = document.getElementById("btnSound");
             btnSound.play();
       }
+        //loader                    
+      var loader = document.getElementById("preloader");
+          window.addEventListener("load", function(){
+          loader.style.display = "none";
+      })
     </script>
   </body>
 </html>

@@ -38,6 +38,10 @@
   font-family: Press+Start+2P;
   font-size: 2em;
 }
+       #preloader{
+        background-color: #fff;
+        background-size: cover;
+      }
     </style>
   </head>
   <body>
@@ -77,5 +81,10 @@ function playHoverSound() {
   hoverSound.play();
 }
 myButton.addEventListener("mouseenter", playHoverSound);
+    //loader                    
+    var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
     </script>
 

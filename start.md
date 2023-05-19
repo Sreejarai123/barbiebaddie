@@ -15,6 +15,10 @@
         align-items: center;
         justify-content: center;
       }
+       #preloader{
+        background-color: #fff;
+        background-size: cover;
+      }
     </style>
   </head>
   <body>
@@ -25,13 +29,18 @@
       <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
     </div>
     <script>
-var hoverSound = document.getElementById("hoverSound");
-var myButton = document.getElementById("myButton");
-function playHoverSound() {
-  hoverSound.currentTime = 0; // Reset the playback position to the beginning
-  hoverSound.play();
-}
-myButton.addEventListener("mouseenter", playHoverSound);
+    var hoverSound = document.getElementById("hoverSound");
+    var myButton = document.getElementById("myButton");
+    function playHoverSound() {
+        hoverSound.currentTime = 0; // Reset the playback position to the beginning
+        hoverSound.play();
+    }
+    myButton.addEventListener("mouseenter", playHoverSound);
+    //loader                    
+    var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
     </script>
   </body>
 </html>

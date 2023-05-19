@@ -9,6 +9,10 @@
     background-size: cover;
     background-position: center;
   }
+       #preloader{
+        background-color: #fff;
+        background-size: cover;
+      }
 </style>
   </head>
   <body>
@@ -20,6 +24,11 @@
     }
     // Set a timeout to navigate after the delay
     setTimeout(navigateToNextPage, delayTime);
+    //loader                    
+    var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
     </script>
   </body>
 </html>
