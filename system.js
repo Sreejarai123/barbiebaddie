@@ -135,28 +135,36 @@ function accessoryundobtn() {
 var haircanvas = document.getElementById('hair');
 var haircontext = haircanvas.getContext('2d');
 
+
+var hairDcanvas = document.getElementById('hairDcanvas');
+var hairDcontext = hairDcanvas.getContext('2d');
+
+
 var hairImages = [
-  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-Bla.png',
-  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-Blo.png',
-  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-Bro.png',
-  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairL-G.png",
-  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-Bla.png",
-  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-Blo.png",
-  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-Bro.png",
-  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hairs/hairS-G.png",
-  ];
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-Bla.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-Blo.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-Bro.png',
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairL-G.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-Bla.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-Blo.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-Bro.png",
+  "https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/hair/hairS-G.png",
+];
+
 
 var hairImage = new Image();
-var hairIndex = -1; // Track the current hair index
+var hairIndex = 0; // Track the current hair index
 var hairVisible = false; // Flag to track hair visibility
+
 
 function hairbtnL() {
   hairIndex--;
-  if (hairIndex < 0) {
+  if (hairIndex < 1) {
     hairIndex = hairImages.length - 1;
   }
   hairbtn(hairIndex);
 }
+
 
 function hairbtnR() {
   hairIndex++;
@@ -165,6 +173,7 @@ function hairbtnR() {
   }
   hairbtn(hairIndex);
 }
+
 
 function hairbtn(index) {
   if (hairundo === true) {
@@ -192,19 +201,26 @@ function hairbtn(index) {
   }
 }
 
+
 var hairundo = false;
+
 
 function hairundobtn() {
   if (hairundo === false) {
-  haircontext.clearRect(0, 0, canvas.width, canvas.height);
-  hairundo = true;
-  document.querySelector('#hairundo').innerHTML = 'remove';
+    haircontext.clearRect(0, 0, canvas.width, canvas.height);
+    hairundo = true;
+    document.querySelector('#hairundo').innerHTML = 'remove';
   } else if (hairundo === true) {
     haircontext.drawImage(0, 0, canvas.width, canvas.height);
     hairundo = false;
     document.querySelector('#hairundo').innerHTML = 'remove';
   }
 }
+
+
+// Add event listeners to the arrow buttons
+document.getElementById('hairbtn-L').addEventListener('click', hairbtnL);
+document.getElementById('hairbtn-R').addEventListener('click', hairbtnR);
 
 //두번 클릭시 취소
 var hatundo = false;
