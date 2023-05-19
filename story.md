@@ -58,6 +58,26 @@
             <p class="typing">I cheated on you.</p>
           </div>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <section class="message -right">
           <!-- Balloon -->
           <div class="hide">
