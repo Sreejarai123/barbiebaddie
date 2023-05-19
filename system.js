@@ -177,30 +177,18 @@ function hairbtnR() {
 
 function hairbtn(index) {
   if (hairundo === true) {
-    document.querySelector('#hairundo').innerHTML = 'remove';
+    document.querySelector('#hairundo').innerHTML = '취소하기'
     hairundo = false;
-  }
-  if (index === hairIndex) {
-    // Same button clicked again
-    if (hairVisible) {
-      haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
-      hairVisible = false;
-    } else {
-      haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
-      hairVisible = true;
-    }
-  } else {
-    // Different button clicked, update the current index and display the hair
-    hairIndex = index;
-    hairImage.onload = function() {
-      haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
-      haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
-      hairVisible = true;
     };
-    hairImage.src = hairImages[index];
-  }
+  hairIndex = index;
+  hairImage.src = hairImages[index];
+  hairImage.onload = function() {
+    haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
+    //hairDcontext.clearRect(0, 0, hairDcanvas.width, hairDcanvas.height);
+    haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
+    //hairDcontext.drawImage(hairImage, 0, 0, hairDcanvas.width, hairDcanvas.height);  
+  };
 }
-
 
 var hairundo = false;
 
@@ -217,11 +205,10 @@ function hairundobtn() {
   }
 }
 
-
 // Add event listeners to the arrow buttons
 document.getElementById('hairbtn-L').addEventListener('click', hairbtnL);
 document.getElementById('hairbtn-R').addEventListener('click', hairbtnR);
-
+/*
 //두번 클릭시 취소
 var hatundo = false;
 
@@ -321,7 +308,7 @@ function hatbtn(n) {
   }
   hatimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/hat/hats.png';
   }
-}
+} */
 
 var shirtcanvas = document.getElementById('shirt');
 var shirtcontext = shirtcanvas.getContext('2d');
