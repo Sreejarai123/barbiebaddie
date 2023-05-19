@@ -112,85 +112,85 @@
      <div class="content-item" id="hat-content">
         <table>
              <tr>
-            <td><button onclick="hairbtn(1)"><img src="images/hair/hairL-Bla.png" alt="shoe1"></button></td>
+            <td><button onclick="hairbtn(1)"><img src="images/zcropped/hairL-Bla-c.png" alt="shoe1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(2)"><img src="images/hair/hairL-Blo.png" alt="shoe2"></button></td>
+            <td><button onclick="hairbtn(2)"><img src="images/zcropped/hairL-Blo-c.png" alt="shoe2"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(3)"><img src="images/hair/hairL-Bro.png" alt="shoe3"></button></td>
+            <td><button onclick="hairbtn(3)"><img src="images/zcropped/hairL-Bro-c.png" alt="shoe3"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(4)"><img src="images/hair/hairL-G.png" alt="shoe4"></button></td>
+            <td><button onclick="hairbtn(4)"><img src="images/zcropped/hairL-G-c.png" alt="shoe4"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-Bla.png" alt="shoe5"></button></td>
+            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-Bla-c.png" alt="shoe5"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-Blo.png" alt="shoe5"></button></td>
+            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-Blo-c.png" alt="shoe5"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-Bro.png" alt="shoe5"></button></td>
+            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-Bro-c.png" alt="shoe5"></button></td>
           </tr>
            <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/hair/hairS-G.png" alt="shoe5"></button></td>
+            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-G-c.png" alt="shoe5"></button></td>
           </tr>
         </table>
       </div>
       <div class="content-item" id="shirt-content">
         <table>
           <tr>
-            <td><button onclick="shirtbtn(0)"><img src="images/tops/top1.png" alt="전형적인 멜빵바지"></button></td>
+            <td><button onclick="shirtbtn(0)"><img src="images/zcropped/top1c.png" alt="전형적인 멜빵바지"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(1)"><img src="images/tops/top2.png" alt="황금 테두리 셔츠"></button></td>          
+            <td><button onclick="shirtbtn(1)"><img src="images/zcropped/top2c.png" alt="황금 테두리 셔츠"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(2)"><img src="images/tops/top3.png" alt="무지갯빛 셔츠"></button></td>        
+            <td><button onclick="shirtbtn(2)"><img src="images/zcropped/top3c.png" alt="무지갯빛 셔츠"></button></td>        
           </tr>
           <tr>
-            <td><button onclick="shirtbtn(3)"><img src="images/tops/top4.png" alt="펜던트 셔츠"></button></td>           
+            <td><button onclick="shirtbtn(3)"><img src="images/zcropped/top4c.png" alt="펜던트 셔츠"></button></td>           
           </tr>
         </table>
       </div>
       <div class="content-item" id="pants-content">
         <table>
           <tr>
-            <td><button onclick="pantsbtn(0)"><img src="images/bottoms/bottom1.png" alt="pants1"></button></td>           
+            <td><button onclick="pantsbtn(0)"><img src="images/zcropped/bottom1c.png" alt="pants1"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(1)"><img src="images/bottoms/bottom2.png" alt="pants2"></button></td>          
+            <td><button onclick="pantsbtn(1)"><img src="images/zcropped/bottom2c.png" alt="pants2"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(2)"><img src="images/bottoms/bottom3.png" alt="pants3"></button></td>           
+            <td><button onclick="pantsbtn(2)"><img src="images/zcropped/bottom3c.png" alt="pants3"></button></td>           
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(3)"><img src="images/bottoms/bottom4.png" alt="pants4"></button></td>          
+            <td><button onclick="pantsbtn(3)"><img src="images/zcropped/bottom4c.png" alt="pants4"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(4)"><img src="images/bottoms/bottom5.png" alt="pants5"></button></td>          
+            <td><button onclick="pantsbtn(4)"><img src="images/zcropped/bottom5c.png" alt="pants5"></button></td>          
           </tr>
           <tr>
-            <td><button onclick="pantsbtn(5)"><img src="images/bottoms/bottom6.png" alt="pants6"></button></td>         
+            <td><button onclick="pantsbtn(5)"><img src="images/zcropped/bottom6c.png" alt="pants6"></button></td>         
           </tr>
         </table>
       </div>
       <div class="content-item" id="shoes-content">
         <table>
           <tr>
-            <td><button onclick="shoesbtn(0)"><img src="images/shoes/shoe1.png" alt="shoe1"></button></td>
+            <td><button onclick="shoesbtn(0)"><img src="images/zcropped/shoe1c.png" alt="shoe1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(1)"><img src="images/shoes/shoe2.png" alt="shoe2"></button></td>
+            <td><button onclick="shoesbtn(1)"><img src="images/zcropped/shoe2c.png" alt="shoe2"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(2)"><img src="images/shoes/shoe3.png" alt="shoe3"></button></td>
+            <td><button onclick="shoesbtn(2)"><img src="images/zcropped/shoe3c.png" alt="shoe3"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(3)"><img src="images/shoes/shoe4.png" alt="shoe4"></button></td>
+            <td><button onclick="shoesbtn(3)"><img src="images/zcropped/shoe4c.png" alt="shoe4"></button></td>
           </tr>
           <tr>
-            <td><button onclick="shoesbtn(4)"><img src="images/shoes/shoe5.png" alt="shoe5"></button></td>
+            <td><button onclick="shoesbtn(4)"><img src="images/zcropped/shoe5c.png" alt="shoe5"></button></td>
           </tr>
         </table>
       </div>
