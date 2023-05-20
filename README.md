@@ -27,8 +27,7 @@ Happy styling and storytelling!
 **LAE GAMES TEAM**
 
 ## Credentials
-
-Luna Iwazaki        Ellie Pang          Annika Liao
+Annika Liao        Ellie Pang         Luna Iwazaki
 
 
 
