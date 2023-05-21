@@ -200,8 +200,8 @@
    <audio id="music" autoplay loop></audio>
     <div id="sex">
       <div class="music-buttons">
-        <button id="man-btn" onclick="changeMusic('audio/gametheme.mp3')">Play Music 1</button>
-        <button id="woman-btn" onclick="changeMusic('audio/Popmusic.mp3')">Play Music 2</button>
+        <button id="man-btn" onclick="changeMusic('audio/gametheme.mp3')">Baddie</button>
+        <button id="woman-btn" onclick="changeMusic('audio/Popmusic.mp3')">Cute Baddie</button>
     </div>
   </div>
   <script>
