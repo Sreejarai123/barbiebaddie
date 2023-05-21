@@ -202,6 +202,7 @@
       <div class="music-buttons">
         <button id="man-btn" onclick="changeMusic('audio/gametheme.mp3')">Baddie</button>
         <button id="woman-btn" onclick="changeMusic('audio/Popmusic.mp3')">Cute Baddie</button>
+        <button id="woman-btn" onclick="changeMusic('audio/paris.mp3')">Chill Baddie</button>
     </div>
   </div>
   <script>
