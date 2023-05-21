@@ -21,7 +21,7 @@
       }
     </style>
   </head>
-  <body>
+  <body> 
     <div class="center" id="overlay">
       <h1>Code Couture</h1>
       <label>Get ready to dress to impress, break the fashion barriers, and let your inner geek shine in Code Couture – the ultimate fusion of computer science and haute couture. It's time to redefine fashion, one line of code at a time!</label>
