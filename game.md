@@ -194,13 +194,23 @@
           </tr>
         </table>
       </div>
-    </div>
-  </div>
 
   <script src="system.js"></script>
 
-</body>
-
-<!--<a href="https://www.flaticon.com/free-icons/pet" title="pet icons">Pet icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/accessories" title="accessories icons">Accessories icons created by Victoruler - Flaticon</a>-->
-</html>
+   <audio id="music" autoplay loop></audio>
+    <div id="sex">
+      <div class="music-buttons">
+        <button id="man-btn" onclick="changeMusic('audio/gametheme.mp3')">Play Music 1</button>
+        <button id="woman-btn" onclick="changeMusic('audio/Popmusic.mp3')">Play Music 2</button>
+    </div>
+  </div>
+  <script>
+    var musicElement = document.getElementById('music');
+    function changeMusic(musicSrc) {
+      musicElement.src = musicSrc;
+      musicElement.load();
+      musicElement.play();
+    }
+  </script>
+   </div>
+</div>

@@ -6,6 +6,7 @@ function startGame() {
   myGameArea.start();
 }
 
+
 var menuButtons = document.getElementsByClassName('menu-content');
 var contentItem = document.getElementsByClassName('content-item');
 
@@ -514,3 +515,18 @@ function darkskin() {
   }
 
 }
+
+var changeButton = document.getElementById('changeButton');
+changeButton.addEventListener('click', changeBackgroundAndMusic);
+
+function changeBackgroundAndMusic() {
+  // Change the background
+  document.body.style.background = 'url(gar.jpeg)';
+
+  // Play different music
+  myMusic.stop(); // Stop the current music
+  myMusic = new sound('Popmusic.mp3');
+  myMusic.play();
+}
+
+
