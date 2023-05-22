@@ -6,7 +6,6 @@ function startGame() {
   myGameArea.start();
 }
 
-
 var menuButtons = document.getElementsByClassName('menu-content');
 var contentItem = document.getElementsByClassName('content-item');
 
@@ -154,13 +153,13 @@ var hairImages = [
 
 
 var hairImage = new Image();
-var hairIndex = 0; // Track the current hair index
+var hairIndex = -1; // Track the current hair index
 var hairVisible = false; // Flag to track hair visibility
 
 
 function hairbtnL() {
   hairIndex--;
-  if (hairIndex < 1) {
+  if (hairIndex < 0) {
     hairIndex = hairImages.length - 1;
   }
   hairbtn(hairIndex);
@@ -185,9 +184,9 @@ function hairbtn(index) {
   hairImage.src = hairImages[index];
   hairImage.onload = function() {
     haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
-    //hairDcontext.clearRect(0, 0, hairDcanvas.width, hairDcanvas.height);
     haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
-    //hairDcontext.drawImage(hairImage, 0, 0, hairDcanvas.width, hairDcanvas.height);  
+    hairDcontext.clearRect(0, 0, hairDcanvas.width, hairDcanvas.height);
+    hairDcontext.drawImage(hairImage, 0, 0, hairDcanvas.width, hairDcanvas.height);  
   };
 }
 
@@ -207,8 +206,6 @@ function hairundobtn() {
 }
 
 // Add event listeners to the arrow buttons
-document.getElementById('hairbtn-L').addEventListener('click', hairbtnL);
-document.getElementById('hairbtn-R').addEventListener('click', hairbtnR);
 /*
 //두번 클릭시 취소
 var hatundo = false;
@@ -515,18 +512,3 @@ function darkskin() {
   }
 
 }
-
-var changeButton = document.getElementById('changeButton');
-changeButton.addEventListener('click', changeBackgroundAndMusic);
-
-function changeBackgroundAndMusic() {
-  // Change the background
-  document.body.style.background = 'url(gar.jpeg)';
-
-  // Play different music
-  myMusic.stop(); // Stop the current music
-  myMusic = new sound('Popmusic.mp3');
-  myMusic.play();
-}
-
-
