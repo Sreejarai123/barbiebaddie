@@ -29,6 +29,10 @@ Happy styling and storytelling!
 ## Credentials
 Annika Liao        Ellie Pang         Luna Iwazaki
 
+## Special Thanks
+
+Special thanks to BABS for giving us this oppertunity to be inspired by a fashion icon just like her. We aspire to conitinue our fashion dreams, this project wouldn't have been here without BABS. BABS 4 LIFE <3
+
 
 
 
