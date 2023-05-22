@@ -24,8 +24,6 @@
     background-color: white;
   }
   
-  /*좌측 화면*/
-  
   #display {
     position: relative;
     display: flex;
@@ -69,9 +67,7 @@
     transform: scaleX(0);
   }
   
-
-  /*캔버스*/
-  
+/*body base*/
   #canvas {
     margin: 20% 0 0 0;
     position: relative;
@@ -125,7 +121,7 @@
     display: none;
   }
   
-  /*화살표*/
+  
   
   #arrows {
     margin: 10% 0 0 0;
@@ -140,12 +136,12 @@
   
   #arrows i {
     width: 60px;
-    color: rgb(238, 155, 0);
+    color: rgb(214, 120, 200);
     height: 80px;
   }
   
   #arrows i:active {
-    color: rgb(190, 114, 0);
+    color: rgb(190, 0, 177);
   }
   
   /*성별*/
@@ -156,18 +152,21 @@
     height: 100px;
     display: flex;
     justify-content: center;
+    outline: none;
   }
   
   #man-btn {
     width: 100px;
     height: 100px;
-    margin: 0 10px 0 0;
-    border-radius: 10%;
-    background-color: rgb(255, 242, 205);
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
   }
   
   #man-btn:active {
-    background-color: rgb(218, 206, 175);
+    background-color: transparent;
+    border-color: transparent;
   }
   
   #man-btn i {
@@ -183,12 +182,15 @@
     width: 100px;
     height: 100px;
     margin: 0 0 0 10px;
-    border-radius: 10%;
-    background-color: rgb(255, 242, 205);
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
   }
   
   #woman-btn:active {
-    background-color: rgb(218, 206, 175);
+    background-color: transparent;
+    border-color: transparent;
   }
   
   #woman-btn i {

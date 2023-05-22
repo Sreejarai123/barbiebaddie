@@ -204,6 +204,21 @@
         <button id="woman-btn" onclick="changeMusic('audio/Popmusic.mp3')">Cute Baddie</button>
         <button id="woman-btn" onclick="changeMusic('audio/paris.mp3')">Chill Baddie</button>
     </div>
+    <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
   </div>
   <script>
     var musicElement = document.getElementById('music');
@@ -212,6 +227,12 @@
       musicElement.load();
       musicElement.play();
     }
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
   </script>
    </div>
 </div>
