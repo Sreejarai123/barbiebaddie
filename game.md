@@ -10,6 +10,7 @@
   <title>CODE COUTURE</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scroll.css">
+  <link rel="stylesheet" href="ness.css">
   <style>
     div.absolute {
       position: absolute;
