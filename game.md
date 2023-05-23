@@ -185,13 +185,22 @@
   }
 </style>
 
+<style>
+  .music-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+
 <script src="system.js"></script>
 <audio id="music" autoplay loop></audio>
 <div id="sex">
   <div class="music-buttons">
     <button onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')">Baddie</button>
-    <button onclick="changeContent('audio/Popmusic.mp3', 'url(images/tops/calmbackround.jpeg)')">Cute Baddie</button>
+    <button onclick="changeContent('audio/Popmusic.mp3', 'url(images/tops/lightpink.jpeg)')">Cute Baddie</button>
     <button onclick="changeContent('audio/paris.mp3', 'url(images/tops/pinkcloset.jpeg)')">Chill Baddie</button>
+  </div>
+</div>
 
 <script>
   var musicElement = document.getElementById('music');
