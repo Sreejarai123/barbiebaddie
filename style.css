@@ -338,7 +338,7 @@
     height: 250px;
     border: rgb(214, 120, 200) 2px solid;
     background-size: 60% 60%;
-    background-image: url('images/hair/barbie head.png');
+    background-image: url('.../StardewDressUp/hair-salon.png');
     background-position: center;
     background-repeat: no-repeat;
   }
