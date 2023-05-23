@@ -178,18 +178,20 @@ function hairbtnR() {
 
 function hairbtn(index) {
   if (hairundo === true) {
-    document.querySelector('#hairundo').innerHTML = 'REMOVE'
+    document.querySelector('#hairundo').innerHTML = 'REMOVE';
     hairundo = false;
-    };
+  }
   hairIndex = index;
   hairImage.src = hairImages[index];
   hairImage.onload = function() {
     haircontext.clearRect(0, 0, haircanvas.width, haircanvas.height);
     haircontext.drawImage(hairImage, 0, 0, haircanvas.width, haircanvas.height);
-    hairDcontext.clearRect(0, 0, hairDcanvas.width, hairDcanvas.height);
-    hairDcontext.drawImage(hairImage, 0, 0, hairDcanvas.width, hairDcanvas.height);  
+    
+    hairDcontext.clearRect(0, 0, hairDcanvas.width, hairDcanvas.height);    
+    hairDcontext.drawImage(hairImage, 0, 0, hairDcanvas.width, 350);
   };
 }
+
 
 var hairundo = false;
 

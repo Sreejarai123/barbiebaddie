@@ -99,7 +99,7 @@
               </div>
             </div>
             <div id="hair-setting">
-              <div><button id="hairundo" onclick="hairundobtn()">Remove</button></div>
+              <div><button id="hairundo" onclick="hairundobtn()"> Remove </button></div>
             </div>
           </div>
           <div class="bodyinfwrap" id="bodyinf-Down">
