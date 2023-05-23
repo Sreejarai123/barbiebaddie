@@ -177,7 +177,7 @@ function hairbtnR() {
 
 function hairbtn(index) {
   if (hairundo === true) {
-    document.querySelector('#hairundo').innerHTML = '취소하기'
+    document.querySelector('#hairundo').innerHTML = 'REMOVE'
     hairundo = false;
     };
   hairIndex = index;
