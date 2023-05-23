@@ -65,7 +65,7 @@
       </div>
       <div class="menu-content">
         <button class="menu-btn" id="dress-btn" onclick="menu(1, 'orange', 'rgb(255, 233, 172)')">
-          <img src="https://o.remove.bg/downloads/e4240c24-8c01-4778-8968-8085ffacb62e/download-removebg-preview.png" alt="dress"> 
+          <img src="images/large-dress.png" alt="dress"> 
         </button>
       </div>
       <div class="menu-content">
