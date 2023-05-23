@@ -24,6 +24,7 @@ function menu(index, Mcolorcode, Ccolorcode) {
 
 menu(0, 'orange', 'rgb(255, 233, 172)');
 
+/* 
 var accessorySX = 0;
 var accessorySY = 0;
 var accessoryPositionY = 0;
@@ -61,7 +62,7 @@ function accessorybtnR() {
   accessorybtn();
 }
 
-/* function accessorybtn() {
+function accessorybtn() {
   
   if (accessoryundo === true) {
     document.querySelector('#accessoryundo').innerHTML = '취소하기'
@@ -114,7 +115,6 @@ function accessorybtnR() {
   }
   accessoryimg.src = 'https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/accessories/accessories.png';
 }
-*/
 
 var accessoryundo = false;
 
@@ -129,8 +129,9 @@ function accessoryundobtn() {
     document.querySelector('#accessoryundo').innerHTML = '--';
   }
 }
+*/
 
-//머리 버튼 클릭시 
+//hair
 
 var haircanvas = document.getElementById('hair');
 var haircontext = haircanvas.getContext('2d');
