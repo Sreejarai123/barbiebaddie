@@ -65,7 +65,7 @@
       </div>
       <div class="menu-content">
         <button class="menu-btn" id="dress-btn" onclick="menu(1, 'orange', 'rgb(255, 233, 172)')">
-          <img src="images/large-dress.png" alt="dress"> 
+          <img src="https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/large-dress.png" alt="dress"> 
         </button>
       </div>
       <div class="menu-content">
