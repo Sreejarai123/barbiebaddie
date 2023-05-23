@@ -10,7 +10,7 @@
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-image: url('images/tops/back.jpeg'); /* Replace with the path to your image */
+    background-image: url('images/backgrounds/back.jpeg'); /* Replace with the path to your image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,8 +23,6 @@
     grid-template-columns: 1fr 2fr;
     background-color: white;
   }
-  
-  /*좌측 화면*/
   
   #display {
     position: relative;
@@ -69,9 +67,7 @@
     transform: scaleX(0);
   }
   
-
-  /*캔버스*/
-  
+/*body base*/
   #canvas {
     margin: 20% 0 0 0;
     position: relative;
@@ -108,7 +104,7 @@
     position: absolute;
   }
   
-  #hat {
+  #dress {
     position: absolute;
   }
   
@@ -125,7 +121,7 @@
     display: none;
   }
   
-  /*화살표*/
+  
   
   #arrows {
     margin: 10% 0 0 0;
@@ -140,12 +136,12 @@
   
   #arrows i {
     width: 60px;
-    color: rgb(238, 155, 0);
+    color: rgb(214, 120, 200);
     height: 80px;
   }
   
   #arrows i:active {
-    color: rgb(190, 114, 0);
+    color: rgb(190, 0, 177);
   }
   
   /*성별*/
@@ -156,18 +152,21 @@
     height: 100px;
     display: flex;
     justify-content: center;
+    outline: none;
   }
   
   #man-btn {
     width: 100px;
     height: 100px;
-    margin: 0 10px 0 0;
-    border-radius: 10%;
-    background-color: rgb(255, 242, 205);
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
   }
   
   #man-btn:active {
-    background-color: rgb(218, 206, 175);
+    background-color: transparent;
+    border-color: transparent;
   }
   
   #man-btn i {
@@ -183,12 +182,15 @@
     width: 100px;
     height: 100px;
     margin: 0 0 0 10px;
-    border-radius: 10%;
-    background-color: rgb(255, 242, 205);
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
   }
   
   #woman-btn:active {
-    background-color: rgb(218, 206, 175);
+    background-color: transparent;
+    border-color: transparent;
   }
   
   #woman-btn i {
@@ -200,14 +202,13 @@
     color: rgb(196, 127, 0);
   }
   
-  /*우측화면*/
+  
   
   #setting {
     display: grid;
     grid-template-rows: 100px 615px;
   }
   
-  /*메뉴*/
   
   #menu {
     display: flex;
@@ -235,7 +236,7 @@
     padding: 25px 0 0 0;
   }
   
-  #hat-btn i {
+  #dress-btn i {
     color: white;
     padding: 20px 0 0 0;
   }
@@ -259,20 +260,18 @@
     padding: 20px 0 0 0;
   }
   
-  /*내용*/
+
   .content-item {
     display: none;
   }
   
-  /*표*/
+
   
   table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
   }
-  
-  /*얼굴*/
   
   #bodyinf {
     display: flex;
@@ -284,14 +283,14 @@
   .bodyinfheader {
     display: inline-block;
     box-sizing: border-box;
-    height: 20%;
+    height: 15%;
     text-align: center;
-    color: rgb(53, 22, 1);
-    padding: 10px 5px 15px 5px;
+    color: rgb(42, 1, 53);
+    padding: 10px 5px 0px 5px;
   }
   
   .body-arrow {
-    color: rgb(230, 149, 0);
+    color: rgb(255, 184, 234);
     position: relative;
     top: 32%;
   }
@@ -322,6 +321,7 @@
     flex-direction: row;
     flex: 1fr 0 1fr;
     align-items: center;
+    padding-bottom: 10px;
   }
   
   #hairbtn-L:hover {
@@ -329,13 +329,14 @@
   }
   
   #hairbtn-L:active {
-    color: rgb(196, 127, 0);
+    color: rgb(214, 120, 200);
     cursor: pointer;
   }
   
   #hairDcanvas {
-    width: 192px;
-    border: rgb(243, 158, 0) 2px solid;
+    width: 200px;
+    height: 250px;
+    border: rgb(214, 120, 200) 2px solid;
     background-size: 60% 60%;
     background-image: url('../StardewDressUp/hair-salon.png');
     background-position: center;
@@ -348,14 +349,14 @@
   }
   
   #hairbtn-R:active {
-    color: rgb(196, 127, 0);
+    color: rgb(214, 120, 200);
     cursor: pointer;
   }
   
   #hair-setting {
     box-sizing: border-box;
     text-align: center;
-    height: 20%;
+    height: 30%;
     padding: 0;
     margin: auto;
   }
@@ -365,17 +366,21 @@
     height: 80%;
     padding: 10px 10px 10px 0px;
   }
-  
   #hairundo {
     position: relative;
-    width: 15%;
-    background-color: orange;
-    border-radius: 7px;
-    color: white;
+    background-color: (214, 120, 200);
+    color: rgb(42, 1, 53);
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    width: 25%;;
   }
-  
+  button {
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }  
   #bodyinf-Down {
     display: inline-block;
   }
@@ -392,7 +397,7 @@
   }
   
   #accessory-L:active {
-    color: rgb(196, 127, 0);
+    color: rgb(214, 120, 200);
     cursor: pointer;
   }
   
@@ -401,7 +406,7 @@
   }
   
   #accessory-R:active {
-    color: rgb(196, 127, 0);
+    color: rgb(214, 120, 200);
     cursor: pointer;
   }
   
@@ -423,7 +428,7 @@
   #accessoryundo {
     position: relative;
     width: 15%;
-    background-color: orange;
+    color: rgb(214, 120, 200);
     border-radius: 7px;
     color: white;
     margin: 0;
@@ -433,7 +438,7 @@
   /*모자, 옷, 바지, 신발 공통*/
   
   th, td {
-    border: 3px rgb(230, 166, 71) solid;
+    color: rgb(214, 120, 200);
     padding: 16px;
   }
   
@@ -484,11 +489,11 @@
   
   table button:hover {
     cursor: pointer;
-    background-color: rgb(255, 213, 136);
+    background-color: rgb(214, 120, 200);
   }
   
   table button:active {
-    background-color: rgb(233, 195, 124);
+    background-color: rgb(214, 120, 200);
   }
   
   table img {
@@ -507,12 +512,12 @@
   
   table a:hover {
     text-decoration: underline;
-    color: rgb(255, 179, 38);
+    color: rgb(214, 120, 200);
   }
   
   table a {
     text-decoration: none;
-    color: rgb(141, 102, 34);
+    color: rgb(214, 120, 200);
   }
   
   table ul {
@@ -524,46 +529,46 @@
     left: -24px;
   }
   
-  /*얼굴*/
+
   
   #body-content {
     border-radius: 0 0 10px 10px;
-    border: orange solid 12px;
+    border: pink solid 12px;
     box-sizing: border-box;
   }
   
-  /*모자*/
+
   
-  #hat-content {
+  #dress-content {
     border-radius: 0 0 10px 10px;
-    border: orange solid 12px;
+    border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
   
-  /*셔츠*/
-  
+
+
   #shirt-content {
     border-radius: 0 0 10px 10px;
-    border: orange solid 12px;
+    border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
   
-  /*바지*/
+
   
   #pants-content {
     border-radius: 0 0 10px 10px;
-    border: orange solid 12px;
+    border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
   
-  /*신발*/
+
   
   #shoes-content {
     border-radius: 0 0 10px 10px;
-    border: orange solid 12px;
+    border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
