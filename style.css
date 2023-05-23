@@ -10,7 +10,7 @@
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-image: url('images/backgrounds/back.png'); /* Replace with the path to your image */
+    background-image: url('images/backgrounds/back.jpeg'); /* Replace with the path to your image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
