@@ -195,23 +195,36 @@
         </table>
       </div>
 
-  <script src="system.js"></script>
+<style>
+  .music-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
 
-   <audio id="music" autoplay loop></audio>
-    <div id="sex">
-      <div class="music-buttons">
-        <button id="man-btn" onclick="changeMusic('audio/gametheme.mp3')">Baddie</button>
-        <button id="woman-btn" onclick="changeMusic('audio/Popmusic.mp3')">Cute Baddie</button>
-        <button id="woman-btn" onclick="changeMusic('audio/paris.mp3')">Chill Baddie</button>
-    </div>
-  </div>
-  <script>
-    var musicElement = document.getElementById('music');
-    function changeMusic(musicSrc) {
-      musicElement.src = musicSrc;
-      musicElement.load();
-      musicElement.play();
-    }
-  </script>
-   </div>
-</div>
+<script src="system.js"></script>
+<audio id="music" autoplay loop></audio>
+<div id="sex">
+  <div class="music-buttons">
+    <button onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')">Baddie</button>
+    <button onclick="changeContent('audio/Popmusic.mp3', 'url(images/tops/lightpink.jpeg)')">Cute Baddie</button>
+    <button onclick="changeContent('audio/paris.mp3', 'url(images/tops/gar.jpeg)')">Chill Baddie</button>
+
+<script>
+  var musicElement = document.getElementById('music');
+
+  function changeContent(musicSrc, backgroundSrc) {
+    changeMusic(musicSrc);
+    changeBackground(backgroundSrc);
+  }
+
+  function changeMusic(musicSrc) {
+    musicElement.src = musicSrc;
+    musicElement.load();
+    musicElement.play();
+  }
+
+  function changeBackground(backgroundSrc) {
+    document.body.style.backgroundImage = backgroundSrc;
+  }
+</script>
