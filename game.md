@@ -32,12 +32,12 @@
     <div id="canvas">
       <canvas id="base"></canvas>
       <canvas id="shoes"></canvas>
+      <canvas id="dress"></canvas>
       <canvas id="pants"></canvas>
       <canvas id="shirtbase"></canvas>
       <canvas id="shirt"></canvas>
       <canvas id="eyes"></canvas>
       <canvas id="hair"></canvas>
-      <canvas id="hat"></canvas>
       <canvas id="accessories"></canvas>
       <canvas id="blank"></canvas>
       <img id="results">
@@ -63,8 +63,8 @@
         </button>
       </div>
       <div class="menu-content">
-        <button class="menu-btn" id="hat-btn" onclick="menu(1, 'orange', 'rgb(255, 233, 172)')">
-          <i class="fab fa-redhat fa-5x"></i>
+        <button class="menu-btn" id="dress-btn" onclick="menu(1, 'orange', 'rgb(255, 233, 172)')">
+          <img src="https://o.remove.bg/downloads/e4240c24-8c01-4778-8968-8085ffacb62e/download-removebg-preview.png" alt="dress"> 
         </button>
       </div>
       <div class="menu-content">
@@ -87,7 +87,7 @@
       <div class="content-item" id="body-content">
         <div id="bodyinf">
           <div class="bodyinfwrap" id="bodyinf-Up">
-            <h2 class="bodyinfheader">Hair</h2>
+            <h2 class="bodyinfheader">HAIR</h2>
             <div id="hairbox">
               <div class="body-arrow" id="L-arrow">
                 <i class="fa fa-solid fa-angle-left fa-3x" id="hairbtn-L" onclick="hairbtnL()"></i>
@@ -109,31 +109,13 @@
           </div>
         </div>
       </div>
-     <div class="content-item" id="hat-content">
+     <div class="content-item" id="dress-content">
         <table>
-             <tr>
-            <td><button onclick="hairbtn(1)"><img src="images/zcropped/hairL-Bla-c.png" alt="shoe1"></button></td>
+          <tr>
+            <td><button onclick="dressbtn(0)"><img src="images/dresses/dress1.png" alt="dress1"></button></td>
           </tr>
           <tr>
-            <td><button onclick="hairbtn(2)"><img src="images/zcropped/hairL-Blo-c.png" alt="shoe2"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="hairbtn(3)"><img src="images/zcropped/hairL-Bro-c.png" alt="shoe3"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="hairbtn(4)"><img src="images/zcropped/hairL-G-c.png" alt="shoe4"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-Bla-c.png" alt="shoe5"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-Blo-c.png" alt="shoe5"></button></td>
-          </tr>
-          <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-Bro-c.png" alt="shoe5"></button></td>
-          </tr>
-           <tr>
-            <td><button onclick="hairbtn(5)"><img src="images/zcropped/hairS-G-c.png" alt="shoe5"></button></td>
+            <td><button onclick="dressbtn(1)"><img src="images/dresses/dress2.png" alt="dress2"></button></td>
           </tr>
         </table>
       </div>

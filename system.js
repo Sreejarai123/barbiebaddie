@@ -206,107 +206,42 @@ function hairundobtn() {
 }
 
 // Add event listeners to the arrow buttons
-/*
+
 //두번 클릭시 취소
-var hatundo = false;
+var dresscanvas = document.getElementById('dress');
+var dresscontext = dresscanvas.getContext('2d');
 
-function samebutton(num, numrepeat) {
+var dressImages = [
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/dresses/dress1.png',
+  'https://raw.githubusercontent.com/codecouturebaddies/codec/gh-pages/images/dresses/dress2.png',
+];
 
-  if (num.length <= 1 ) {
-    return false;
-  } else if (num[num.length - 1] != num[num.length - 2]) {
-    numrepeat = 1;
-    return false;
-  } else {
-    if (numrepeat % 2 != 0) {
-      return false;
+var dressImage = new Image();
+var dressIndex = -1; // Track the current dress index
+var dressVisible = false; // Flag to track dress visibility
+
+function dressbtn(index) {
+  if (index === dressIndex) {
+    // Same button clicked again
+    if (dressVisible) {
+      dresscontext.clearRect(0, 0, dresscanvas.width, dresscanvas.height);
+      dressVisible = false;
     } else {
-      return true;
+      dresscontext.drawImage(dressImage, 0, 0, dresscanvas.width, dresscanvas.height);
+      dressVisible = true;
     }
-  }
-}
-
-//모자 버튼 클릭시
-var hatnum = [];
-var hatnumrepeat = 0;
-var ShareHat = 1;
-var hatSX = 0;
-var hatSY = 0;
-var hatheight = 0;
-
-function hatSYwithI(n) {
-  return (-40/3 * n * n * n) + (50 * n * n) + (-50/3 * n);
-}
-
-var hatcanvas = document.getElementById('hat');
-var hatcontext = hatcanvas.getContext('2d');
-var hatimg = new Image();
-hatimg.crossOrigin="anonymous";
-
-function hatbtn(n) {
-  hatnumrepeat++;
-  hatnum.push(n);
-  if (hatnum.length > 10) {
-    hatnum.splice(0, hatnum.length - 10);
-  }
-
-  if (samebutton(hatnum, hatnumrepeat) === true) {
-    hatcontext.clearRect(0, 0, canvas.width, canvas.height);
   } else {
-
-  hatcontext.clearRect(0, 0, canvas.width, canvas.height);
-
-  if (n % 12 === 1) {
-    hatSX = 0;
-  } else if (n % 12 === 2) {
-    hatSX = 20;
-  } else if (n % 12 === 3) {
-    hatSX = 40;
-  } else if (n % 12 === 4) {
-    hatSX = 60;
-  } else if (n % 12 === 5) {
-    hatSX = 80;
-  } else if (n % 12 === 6) {
-    hatSX = 100;
-  } else if (n % 12 === 7) {
-    hatSX = 120;
-  } else if (n % 12 === 8) {
-    hatSX = 140;
-  } else if (n % 12 === 9) {
-    hatSX = 160;
-  } else if (n % 12 === 10) {
-    hatSX = 180;
-  } else if (n % 12 === 11) {
-    hatSX = 200;
-  } else if (n % 12 === 0) {
-    hatSX = 220;
+    // Different button clicked, update the current index and display the dress
+    dressIndex = index;
+    dressImage.onload = function() {
+      dresscontext.clearRect(0, 0, dresscanvas.width, dresscanvas.height);
+      dresscontext.drawImage(dressImage, 0, 0, dresscanvas.width, dresscanvas.height);
+      dressVisible = true;
+    };
+    dressImage.src = dressImages[index];
   }
+}
 
-  if (n / 12 <= 1) {
-    ShareHat = 0;
-  } else if (n / 12 <= 2) {
-    ShareHat = 1;
-  } else if (n / 12 <= 3) {
-    ShareHat = 2;
-  } else if (n / 12 <= 4) {
-    ShareHat = 3;
-  } else if (n / 12 <= 5) {
-    ShareHat = 4;
-  } else if (n / 12 <= 6) {
-    ShareHat = 5;
-  } else if (n / 12 <= 7) {
-    ShareHat = 6;
-  } else if (n / 12 <= 8) {
-    ShareHat = 7;
-  } 
-  
-  hatSY = hatSYwithI(i) + (ShareHat * 80);
-  hatimg.onload = function() {
-    hatcontext.drawImage(hatimg, hatSX, hatSY, 20, 20, 60, 24 + hatheight, 190, 60);    
-  }
-  hatimg.src='https://raw.githubusercontent.com/ihyeon908/StardewDressUp/main/hat/hats.png';
-  }
-} */
 
 var shirtcanvas = document.getElementById('shirt');
 var shirtcontext = shirtcanvas.getContext('2d');

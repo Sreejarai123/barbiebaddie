@@ -104,7 +104,7 @@
     position: absolute;
   }
   
-  #hat {
+  #dress {
     position: absolute;
   }
   
@@ -237,7 +237,7 @@
     padding: 25px 0 0 0;
   }
   
-  #hat-btn i {
+  #dress-btn i {
     color: white;
     padding: 20px 0 0 0;
   }
@@ -536,7 +536,7 @@
   
   /*모자*/
   
-  #hat-content {
+  #dress-content {
     border-radius: 0 0 10px 10px;
     border: orange solid 12px;
     box-sizing: border-box;
