@@ -190,8 +190,8 @@
 <div id="sex">
   <div class="music-buttons">
     <button onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')">Baddie</button>
-    <button onclick="changeContent('audio/Popmusic.mp3', 'url(images/tops/lightpink.jpeg)')">Cute Baddie</button>
-    <button onclick="changeContent('audio/paris.mp3', 'url(images/tops/gar.jpeg)')">Chill Baddie</button>
+    <button onclick="changeContent('audio/Popmusic.mp3', 'url(images/tops/calmbackround.jpeg)')">Cute Baddie</button>
+    <button onclick="changeContent('audio/paris.mp3', 'url(images/tops/pinkcloset.jpeg)')">Chill Baddie</button>
 
 <script>
   var musicElement = document.getElementById('music');
