@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <style>
   body {
-    background-image: url("images/logo.gif");
+    background-image: url("images/icons/logo.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
