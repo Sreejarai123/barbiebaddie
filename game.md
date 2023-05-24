@@ -15,7 +15,7 @@
 <body>
   <!-- Settings overlay -->
   <button id="settingsButton">
-    <img src="images/settings.png" alt="Settings">
+    <img src="images/icons/settings.png" alt="Settings">
   </button>
   
   <!-- Settings overlay -->
