@@ -297,14 +297,12 @@ div.relative {
   }
   
   .menu-content {
-    border-radius: 30px 30px 0 0 ;
     margin: 0 3px 0 0;
   }
   
   .menu-btn {
     border: none;
     background-color: transparent;
-    border-radius: 30px 30px 0 0 ;
   }
   
   .menu-btn:hover {
@@ -508,13 +506,10 @@ div.relative {
     position: relative;
     width: 15%;
     color: rgb(214, 120, 200);
-    border-radius: 7px;
     color: white;
     margin: 0;
     padding: 0;
   }
-  
-  /*모자, 옷, 바지, 신발 공통*/
   
   th, td {
     color: rgb(214, 120, 200);
@@ -581,13 +576,10 @@ div.relative {
     object-fit: contain;
   }
   
-  
   table a:visited {
     text-decoration: none;
     color: rgb(141, 102, 34);
   }
-  
-  /*visited를 링크 속성 뒤로 보낼 수록 미치는 영향 작아짐*/
   
   table a:hover {
     text-decoration: underline;
@@ -608,45 +600,30 @@ div.relative {
     left: -24px;
   }
   
-
-  
   #body-content {
-    border-radius: 0 0 10px 10px;
     border: pink solid 12px;
     box-sizing: border-box;
   }
-  
-
   
   #dress-content {
-    border-radius: 0 0 10px 10px;
     border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
-  
-
 
   #shirt-content {
-    border-radius: 0 0 10px 10px;
     border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
-  
-
   
   #pants-content {
-    border-radius: 0 0 10px 10px;
     border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
   }
-  
 
-  
   #shoes-content {
-    border-radius: 0 0 10px 10px;
     border: pink solid 12px;
     box-sizing: border-box;
     overflow: auto;
