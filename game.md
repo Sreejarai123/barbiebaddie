@@ -33,7 +33,7 @@
 <audio id="camera" autoplay loop></audio>
 <div id="sex">
   <div class="music-buttons">
-    <img src="images/tops/camera.png" onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')" alt="Camera" />
+    <img src="images/icons/camera.png" onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')" alt="Camera" />
   </div>
 </div>
   <div id="display">
