@@ -29,6 +29,13 @@
       </div>
     </div>
   </div>
+  <script src="camera.js"></script>
+<audio id="camera" autoplay loop></audio>
+<div id="sex">
+  <div class="music-buttons">
+    <button onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')">Camera</button>
+  </div>
+</div>
   <div id="display">
     <div id="canvas">
       <canvas id="base"></canvas>
@@ -220,4 +227,3 @@
     document.body.style.backgroundImage = backgroundSrc;
   }
 </script>
-
