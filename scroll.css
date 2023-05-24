@@ -33,7 +33,7 @@
   .bodytablewrap::-webkit-scrollbar-track {
     background: rgb(255, 172, 236); 
   }
-   
+
   /* Handle */
   .bodytablewrap::-webkit-scrollbar-thumb {
     background: rgb(93, 5, 96); 
