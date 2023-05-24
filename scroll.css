@@ -1,52 +1,50 @@
-/*전체>>>핸들로 좁혀나갈것 중간과정 생략되면 작동 안됨*/
-
 .content-item::-webkit-scrollbar {
     width: 15px;
   }
   
   /* Track */
   .content-item::-webkit-scrollbar-track {
-    background: rgb(255, 233, 172); 
+    background: rgb(255, 172, 236); 
   }
    
   /* Handle */
   .content-item::-webkit-scrollbar-thumb {
-    background: rgb(235, 170, 57); 
-    border: 3px rgb(255, 233, 172) solid;
+    background: rgb(93, 5, 96); 
+    border: 3px rgb(255, 172, 236) solid;
     border-top: none;
     border-bottom: none;
   }
   
   /* Handle on hover */
   .content-item::-webkit-scrollbar-thumb:hover {
-    background: rgb(141, 102, 34); 
+    background: rgb(93, 5, 96); 
   }
   
   .content-item::-webkit-scrollbar-thumb:active {
     border: none;
   }
   
-  /*얼굴*/
+
   .bodytablewrap::-webkit-scrollbar {
     width: 15px;
   }
   
   /* Track */
   .bodytablewrap::-webkit-scrollbar-track {
-    background: rgb(255, 233, 172); 
+    background: rgb(255, 172, 236); 
   }
    
   /* Handle */
   .bodytablewrap::-webkit-scrollbar-thumb {
-    background: rgb(235, 170, 57); 
-    border: 3px rgb(255, 233, 172) solid;
+    background: rgb(93, 5, 96); 
+    border: rgb(255, 172, 236) solid;
     border-top: none;
     border-bottom: none;
   }
   
   /* Handle on hover */
   .bodytablewrap::-webkit-scrollbar-thumb:hover {
-    background: rgb(141, 102, 34); 
+    background: rgb(93, 5, 96); 
   }
   
   .bodytablewrap::-webkit-scrollbar-thumb:active {

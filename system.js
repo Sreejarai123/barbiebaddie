@@ -1,10 +1,30 @@
-function startGame() {
-  myGamePiece = new component(30, 30, "red", 10, 120);
-  mySound = new sound("bounce.mp3");
-  myMusic = new sound("gametheme.mp3");
-  myMusic.play();
-  myGameArea.start();
-}
+document.getElementById('settingsButton').addEventListener('click', function() {
+  var settingsOverlay = document.getElementById('settingsOverlay');
+  settingsOverlay.style.display = 'block';
+});
+
+document.getElementById('volumeSlider').addEventListener('input', function() {
+  var volume = this.value;
+  // Use the volume value to control the audio/sound on your website
+});
+
+document.getElementById('closeButton').addEventListener('click', function() {
+  var settingsOverlay = document.getElementById('settingsOverlay');
+  settingsOverlay.style.display = 'none';
+});
+
+document.addEventListener('click', function(event) {
+  var settingsOverlay = document.getElementById('settingsOverlay');
+  var settingsButton = document.getElementById('settingsButton');
+  if (
+    event.target !== settingsOverlay && 
+    event.target !== settingsButton && 
+    !settingsOverlay.contains(event.target) && 
+    !settingsButton.contains(event.target)
+  ) {
+    settingsOverlay.style.display = 'none';
+  }
+});
 
 var menuButtons = document.getElementsByClassName('menu-content');
 var contentItem = document.getElementsByClassName('content-item');

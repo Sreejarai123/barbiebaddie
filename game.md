@@ -11,24 +11,24 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scroll.css">
   <link rel="stylesheet" href="ness.css">
-  <style>
-    div.absolute {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      width:50%;
-      padding-right:10%;
-    }
-    div.relative {
-      position: relative;
-      height:500px;
-    }
-    body {
-      padding-left: 10%;
-    }
-  </style>
 </head>
 <body>
+  <!-- Settings overlay -->
+  <button id="settingsButton">
+    <img src="images/settings.png" alt="Settings">
+  </button>
+  
+  <!-- Settings overlay -->
+  <div id="settingsOverlay">
+    <div class="nes-dialog is-rounded">
+      <button id="closeButton">&times;</button>
+      <h2>Audio Settings</h2>
+      <div class="audioControls">
+        <label for="volumeSlider">Volume:</label>
+        <input type="range" id="volumeSlider" min="0" max="100" step="1">
+      </div>
+    </div>
+  </div>
   <div id="display">
     <div id="canvas">
       <canvas id="base"></canvas>
