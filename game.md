@@ -34,7 +34,9 @@
 
 <div id="sex" style="position: fixed; top: -125; left: 1495; z-index: 9999;">
 <div class="music-buttons">
-    <img src="images/icons/camera.png" alt="Camera" style="width: 95px; height: 95px;"/>
+    <a href="{{ site.baseurl }}/camera">
+    <img  src="images/icons/camera.png" alt="Camera" style="width: 95px; height: 95px;"/>
+    </a>
 </div>
 </div>
   <div id="display">
