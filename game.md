@@ -13,25 +13,26 @@
   <link rel="stylesheet" href="ness.css">
 </head>
 <body>
-<!--<div id="sex" style="position: fixed; top: -235; left: 1500; z-index: 9999;">
-  <div class="music-buttons">
-    <img src="images/icons/settings.png" alt="Settings" style="width: 95px; height: 95px;"/>
+  <!-- Buttons -->
+<div id="sex" style="position: fixed; top: -225; left: 1495; z-index: 9999;">
+<div class="music-buttons">
+    <img onclick="document.getElementById('dialog-default').showModal();" src="images/icons/settings.png" alt="Settings" style="width: 95px; height: 95px;"/>
+<div class="settingsopen">
+    <dialog class="nes-dialog" id="dialog-default">
+    <form method="dialog">
+      <p class="title">Dialog</p>
+      <p>Alert: this is a dialog.</p>
+      <menu class="dialog-menu">
+        <button class="nes-btn">Cancel</button>
+        <button class="nes-btn is-primary">Confirm</button>
+      </menu>
+    </form>
+  </dialog>
+</div>
 </div>
 </div>
 
-<!--<div id="sex" style="position: fixed; top: -125; left: 1500; z-index: 9999;">
-<div class="music-buttons">
-    <img src="images/icons/camera.png" alt="Camera" style="width: 95px; height: 95px;"/>
-</div>
-</div>
-  <!-- Settings overlay -->
-<div id="sex" style="position: fixed; top: -235; left: 1500; z-index: 9999;">
-<div class="music-buttons">
-    <img src="images/icons/settings.png" alt="Settings" style="width: 95px; height: 95px;"/>
-</div>
-</div>
-
-<div id="sex" style="position: fixed; top: -125; left: 1500; z-index: 9999;">
+<div id="sex" style="position: fixed; top: -125; left: 1495; z-index: 9999;">
 <div class="music-buttons">
     <img src="images/icons/camera.png" alt="Camera" style="width: 95px; height: 95px;"/>
 </div>
@@ -189,6 +190,9 @@
   .music-buttons {
     display: flex;
     justify-content: space-between;
+  }
+  .settingsopen {
+    margin-top: 20px;
   }
 </style>
 
