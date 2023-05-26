@@ -67,7 +67,6 @@
       </section>
       </section>
     </section>
-
         <section class="message -right">
           <!-- Balloon -->
           <div class="hide">

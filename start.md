@@ -19,13 +19,30 @@
         background-color: #fff;
         background-size: cover;
       }
+      @keyframes bobbing {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .bobbing-image {
+        animation: bobbing 3s infinite;
+      }
     </style>
   </head>
   <body> 
     <div class="center" id="overlay">
-      <h1>Code Couture</h1>
-      <label>Get ready to dress to impress, break the fashion barriers, and let your inner geek shine in Code Couture – the ultimate fusion of computer science and haute couture. It's time to redefine fashion, one line of code at a time!</label>
-      <a class="nes-btn is-primary" href="{{ site.baseurl }}/story" id="myButton">PLAY NOW</a>
+      <img src="images/icons/name.png" alt="Image" class="bobbing-image" style="display: block; margin: 0 auto;">
+      <br>
+            <label>Get ready to dress to impress, break the fashion barriers, and let your inner geek shine in Code Couture – the ultimate fusion of computer science and haute couture. It's time to redefine fashion, one line of code at a time!</label>
+      <br>
+      <br>
+      <a class="nes-btn is-error" href="{{ site.baseurl }}/story" id="myButton">PLAY NOW</a>
       <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
     </div>
     <script>
