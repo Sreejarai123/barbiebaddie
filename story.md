@@ -9,7 +9,6 @@
         justify-content: center;
         padding-top: 50px;
       }
-
       .typing {
         width: 22ch;
         animation: typing 2s steps(22);
@@ -19,19 +18,16 @@
         font-family: Press+Start+2P;
         font-size: 2em;
       }
-
       @keyframes typing {
         from {
           width: 0;
         }
       }
-
       @keyframes blink {
         50% {
           border-color: transparent;
         }
       }
-
       .typing2 {
         width: 22ch;
         animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
@@ -42,7 +38,6 @@
         font-family: Press+Start+2P;
         font-size: 2em;
       }
-
       #preloader {
         background-color: #fff;
         background-size: cover;
