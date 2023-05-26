@@ -31,7 +31,7 @@
  </div>
  <script src="camera.js"></script>
 <audio id="camera" autoplay loop></audio>
-<div id="sex" style="position: fixed; top: -125; left: 0; z-index: 9999;">
+<div id="sex" style="position: fixed; top: -85; left: 950; z-index: 9999;">
   <div class="music-buttons">
     <img src="images/icons/camera.png" onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')" alt="Camera" style="width: 95px; height: 95px;"/>
   </div>
