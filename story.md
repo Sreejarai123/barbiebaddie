@@ -9,7 +9,6 @@
         justify-content: center;
         padding-top: 50px;
       }
-
       .typing {
         width: 22ch;
         animation: typing 2s steps(22);
@@ -19,19 +18,16 @@
         font-family: Press+Start+2P;
         font-size: 2em;
       }
-
       @keyframes typing {
         from {
           width: 0;
         }
       }
-
       @keyframes blink {
         50% {
           border-color: transparent;
         }
       }
-
       .typing2 {
         width: 22ch;
         animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
@@ -42,7 +38,6 @@
         font-family: Press+Start+2P;
         font-size: 2em;
       }
-
       #preloader {
         background-color: #fff;
         background-size: cover;
@@ -70,18 +65,20 @@
             <p>Honestly, they are better than you anyways.</p>
           </div>
         </section>
-        <section class="message -right">
+        <section align="right" class="message -right">
           <!-- Balloon -->
           <div class="nes-balloon from-right">
             <p id="printedMessage"><span id="inputMessage"></span></p>
           </div>
           <i class="nes-bcrikko"></i>
+          <div align="right" id="nameDisplay"></div>
         </section>
       </section>
       <div class="nes-field">
         <label for="name_field"></label>
-        <input type="text" id="name_field" class="nes-input">
+        <input type="text" id="name_field" class="nes-input" id="textInput" onkeydown="handleKeyPress(event)">
         <button type="button" class="nes-btn is-primary" onclick="printMessage()">send</button>
+        <div id="contentDisplay"></div>
       </div>
     </div>
     <div class="center">
@@ -96,5 +93,31 @@
       myButton.addEventListener("mouseenter", playHoverSound);
       function playHoverSound() {
         hoverSound.currentTime = 0; // Reset
+      }
+      // var params = new URLSearchParams(window.location.search);
+      // var name = params.get("name");
+      // // Display the name on the page
+      // var nameElement = document.createElement("p");
+      // if (name) {
+      //   nameElement.textContent = "Welcome, " + name + "!";
+      // } else {
+      //   nameElement.textContent = "Welcome!";
+      // }
+      // document.body.appendChild(nameElement);
+      var savedName = localStorage.getItem("userName");
+      if (savedName) {
+          document.getElementById("nameDisplay").textContent = savedName;
+      } else {
+          document.getElementById("nameDisplay").textContent = "User";
+      }
+      function handleKeyPress(event) {
+      if (event.keyCode === 13) {
+          event.preventDefault();
+          displayContent();
+          }
+        }
+      function displayContent() {
+          var input = document.getElementById("textInput").value;
+          document.getElementById("contentDisplay").textContent = input;
       }
     </script>

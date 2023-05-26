@@ -22,9 +22,10 @@
   <section >
         <div class="nes-field is-inline">
             <label for="error_field">Name</label>
-                <input type="text" id="error_field" class="nes-input is-error" placeholder="What's Your Name ?">
+                <input type="text" id="error_field" class="nes-input is-error" id="nameInput" placeholder="What's Your Name ?">
         </div>
-      <a class="nes-btn is-error" href="{{ site.baseurl }}/story" id="myButton">PLAY NOW</a>
+      <!--<a class="nes-btn is-error" href="{{ site.baseurl }}/story" id="myButton">PLAY NOW</a>-->
+      <button class="nes-btn is-error" onclick="saveName(); window.location.href='{{ site.baseurl }}/story'">PLAY NOW</button>
     </section>
       <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
     <script>
@@ -54,6 +55,27 @@
         };
         xhr.send(JSON.stringify({ name: name }));
       }
+      // function saveName() {
+      //   var nameInput = document.getElementById("nameInput");
+      //   var name = nameInput.value;
+      //   localStorage.setItem("name", name);
+      //   alert("Name saved to local storage: " + name);
+      //   // Redirect to the next page with the name as a query parameter
+      //   window.location.href = "{{ site.baseurl }}/story?name=" + encodeURIComponent(name);
+      // }
+      // // Load the saved name from local storage on page load
+      // window.onload = function() {
+      //   var savedName = localStorage.getItem("name");
+      //   if (savedName) {
+      //     var nameInput = document.getElementById("nameInput");
+      //     nameInput.value = savedName;
+      //   }
+      // };
+        function saveName() {
+            var name = document.getElementById("nameInput").value;
+            localStorage.setItem("userName", name);
+            window.location.href = "page2.html";
+        }
     </script>
   </body>
 </html>
