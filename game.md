@@ -13,29 +13,30 @@
   <link rel="stylesheet" href="ness.css">
 </head>
 <body>
-  <!-- Settings overlay -->
-  <button id="settingsButton">
-    <img src="images/icons/settings.png" alt="Settings">
-  </button>
-  
-  <!-- Settings overlay -->
-  <div id="settingsOverlay">
-    <div class="nes-dialog is-rounded">
-      <button id="closeButton">&times;</button>
-      <h2>Audio Settings</h2>
-      <div class="audioControls">
-        <label for="volumeSlider">Volume:</label>
-        <input type="range" id="volumeSlider" min="0" max="100" step="1">
-  </div>
+  <!-- Buttons -->
+<div id="sex" style="position: fixed; top: -225; left: 1495; z-index: 9999;">
+<div class="music-buttons">
+    <img onclick="document.getElementById('dialog-default').showModal();" src="images/icons/settings.png" alt="Settings" style="width: 95px; height: 95px;"/>
+<div class="settingsopen">
+    <dialog class="nes-dialog" id="dialog-default">
+    <form method="dialog">
+      <p class="title">Dialog</p>
+      <p>Alert: this is a dialog.</p>
+      <menu class="dialog-menu">
+        <button class="nes-btn">Cancel</button>
+        <button class="nes-btn is-primary">Confirm</button>
+      </menu>
+    </form>
+  </dialog>
 </div>
- </div>
- <script src="camera.js"></script>
-<audio id="camera" autoplay loop></audio>
-<div id="sex" style="position: fixed; top: -85; left: 950; z-index: 9999;">
-  <div class="music-buttons">
-    <img src="images/icons/camera.png" onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')" alt="Camera" style="width: 95px; height: 95px;"/>
-  </div>
-    </div>
+</div>
+</div>
+
+<div id="sex" style="position: fixed; top: -125; left: 1495; z-index: 9999;">
+<div class="music-buttons">
+    <img src="images/icons/camera.png" alt="Camera" style="width: 95px; height: 95px;"/>
+</div>
+</div>
   <div id="display">
     <div id="canvas">
       <canvas id="base"></canvas>
@@ -189,6 +190,9 @@
   .music-buttons {
     display: flex;
     justify-content: space-between;
+  }
+  .settingsopen {
+    margin-top: 20px;
   }
 </style>
 
