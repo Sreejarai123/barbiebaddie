@@ -26,16 +26,16 @@
       <div class="audioControls">
         <label for="volumeSlider">Volume:</label>
         <input type="range" id="volumeSlider" min="0" max="100" step="1">
-      </div>
-    </div>
-  </div>
-  <script src="camera.js"></script>
-<audio id="camera" autoplay loop></audio>
-<div id="sex" style="position: fixed; top: -120; left: 0; z-index: 9999;">
-  <div class="music-buttons">
-    <img src="images/icons/camera.png" onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')" alt="Camera" style="width: 65px; height: 65px;"/>
   </div>
 </div>
+ </div>
+ <script src="camera.js"></script>
+<audio id="camera" autoplay loop></audio>
+<div id="sex" style="position: fixed; top: -125; left: 0; z-index: 9999;">
+  <div class="music-buttons">
+    <img src="images/icons/camera.png" onclick="changeContent('audio/gametheme.mp3', 'url(images/tops/back.jpeg)')" alt="Camera" style="width: 95px; height: 95px;"/>
+  </div>
+    </div>
   <div id="display">
     <div id="canvas">
       <canvas id="base"></canvas>
