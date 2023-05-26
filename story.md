@@ -47,37 +47,27 @@
   <body>
   <br>
   <br>
-  <div class="nes-container with-title is-centered">
-  <p class="title">boy friend</p>
-    <section class="nes-container">
-      <section class="message-list">
-        <section class="message -left">
-          <i class="nes-bcrikko"></i>
-          <!-- Balloon -->
-          <div class="nes-balloon from-left">
-            <p class="typing">I cheated on you.</p>
-          </div>
-        </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-                <br>
-        <br>
-        <br>
-        <br>
-        <br>
-                <br>
-        <br>
-        <br>
-        <br>
-        <br>
-                <br>
-        <br>
-        <br>
-        <br>
-        <br>
+  <section class="nes-container">
+  <section class="message-list">
+  <!--Boyfriend-->
+    <section class="message -left">
+      <i class="nes-bcrikko"></i>
+      <!-- Balloon -->
+      <div class="nes-balloon from-left">
+        <p>Hey I need to be honest with you. I cheated on you.</p>
+      </div>
+    </section>
+<!--Boyfriend-->
+        <section class="message -right">
+      <!-- Balloon -->
+      <div class="nes-balloon from-right">
+        <p>Honestly they are better then you anyways.</p>
+      </div>
+      <i class="nes-bcrikko"></i>
+      </section>
+      </section>
+    </section>
+
         <section class="message -right">
           <!-- Balloon -->
           <div class="hide">
@@ -88,8 +78,6 @@
           <i class="nes-bcrikko"></i>
         </section>
       </section>
-    </section>
-    </div>
     <div class="center">
     <a class="nes-btn is-primary" href="{{ site.baseurl }}/game" onload="startGame()" id="myButton">Continue &gt;</a>
     <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
