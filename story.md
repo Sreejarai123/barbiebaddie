@@ -118,5 +118,6 @@
       function displayContent() {
           var input = document.getElementById("textInput").value;
           document.getElementById("contentDisplay").textContent = input;
-      }
+          document.getElementById("textInput").value = ""; // Reset input value
+        }
     </script>
