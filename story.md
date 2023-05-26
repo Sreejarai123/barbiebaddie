@@ -68,7 +68,7 @@
         <section align="right" class="message -right">
           <!-- Balloon -->
           <div class="nes-balloon from-right">
-            <p id="printedMessage"><span id="inputMessage"></span></p>
+            <p id="contentDisplay"><span id="inputMessage"></span></p>
           </div>
           <i class="nes-bcrikko"></i>
           <div align="right" id="nameDisplay"></div>
@@ -76,9 +76,8 @@
       </section>
       <div class="nes-field">
         <label for="name_field"></label>
-        <input type="text" id="name_field" class="nes-input" id="textInput" onkeydown="handleKeyPress(event)">
-        <button type="button" class="nes-btn is-primary" onclick="printMessage()">send</button>
-        <div id="contentDisplay"></div>
+        <input type="text" id="name_field" class="nes-input" id="textInput" onkeydown="handleKeyPress(event)" placeholder="Click ENTER key to send">
+        <!--<button type="button" class="nes-btn is-primary" onclick="printMessage()">send</button>-->
       </div>
     </div>
     <div class="center">
