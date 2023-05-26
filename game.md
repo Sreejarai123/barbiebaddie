@@ -16,15 +16,15 @@
   <!-- Buttons -->
 <div id="sex" style="position: fixed; top: -225; left: 1495; z-index: 9999;">
 <div class="music-buttons">
-    <img onclick="document.getElementById('dialog-default').showModal();" src="images/icons/settings.png" alt="Settings" style="width: 95px; height: 95px;"/>
+    <img onclick="document.getElementById('dialog-rounded').showModal();" src="images/icons/settings.png" alt="Settings" style="width: 95px; height: 95px;"/>
 <div class="settingsopen">
-    <dialog class="nes-dialog" id="dialog-default">
+  <dialog class="nes-dialog is-rounded" id="dialog-rounded">
     <form method="dialog">
-      <p class="title">Dialog</p>
+      <p class="title">Rounded dialog</p>
       <p>Alert: this is a dialog.</p>
       <menu class="dialog-menu">
-        <button class="nes-btn">Cancel</button>
-        <button class="nes-btn is-primary">Confirm</button>
+        <button class="nes-btn">Close</button>
+        <button class="nes-btn is-primary" href="{{ site.baseurl }}/start">Main Menu</button>
       </menu>
     </form>
   </dialog>
