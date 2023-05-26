@@ -5,6 +5,10 @@
     <style>
       body {
         padding: 150px;
+        background-image: url("images/icons/background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
       h1 {
         text-align: center;
@@ -32,6 +36,9 @@
       }
       .bobbing-image {
         animation: bobbing 3s infinite;
+      }
+      background {
+
       }
     </style>
   </head>
