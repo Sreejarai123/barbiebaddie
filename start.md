@@ -49,7 +49,7 @@
             <label>Get ready to dress to impress, break the fashion barriers, and let your inner geek shine in Code Couture – the ultimate fusion of computer science and haute couture. It's time to redefine fashion, one line of code at a time!</label>
       <br>
       <br>
-      <a class="nes-btn is-error" href="{{ site.baseurl }}/story" id="myButton">PLAY NOW</a>
+      <a class="nes-btn is-error" href="{{ site.baseurl }}/user" id="myButton">PLAY NOW</a>
       <audio id="hoverSound" src="audio/sfx/start.mp3"></audio>
     </div>
     <script>
