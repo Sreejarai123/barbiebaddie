@@ -3,7 +3,7 @@
 This is a dressup game application that allows users to dress up characters, share their characters, and save their progress. The game includes an interactive story feature and was developed using CSS, JavaScript, Markdown (MD), and various images. All the assets used in the game were created by our talented team.
 
 ## Accessing the Project
-To access the Dressup Game Application, please use the following link: Game Link
+To access the Dressup Game Application, please use the following link: [Game Link](https://codecouturebaddies.github.io/codec/)
 
 ## Features
 **Dress Up Characters:** You can dress up the characters in the game using a wide range of clothing and accessories. Mix and match different items to create unique outfits.
