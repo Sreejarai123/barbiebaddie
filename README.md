@@ -5,6 +5,8 @@ This is a dressup game application that allows users to dress up characters, sha
 ## Accessing the Project
 To access the Dressup Game Application, please use the following link: [Game Link](https://codecouturebaddies.github.io/codec/)
 
+Or to build our game just **git clone https://github.com/codecouturebaddies/codec.git**
+
 ## Features
 **Dress Up Characters:** You can dress up the characters in the game using a wide range of clothing and accessories. Mix and match different items to create unique outfits.
 
